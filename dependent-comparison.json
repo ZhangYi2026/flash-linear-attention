@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "summary": "4 failed, 51 passed, 25 skipped, 5 warnings in 1733.30s (0:28:53)",
+    "failures": {
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.006866",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.006866",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]": "output diff: 0.066406 ratio: 0.003204",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.003738"
+    }
+  },
+  "candidate": {
+    "summary": "4 failed, 51 passed, 25 skipped, 5 warnings in 135.04s (0:02:15)",
+    "failures": {
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.006866",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.006866",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]": "output diff: 0.066406 ratio: 0.003204",
+      "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]": "output diff: 0.078125 ratio: 0.003738"
+    }
+  },
+  "same_failure_nodes_and_logged_errors": true,
+  "notes": "All four failures occur in the unchanged GDP dense/varlen forward comparison before backward. No numerical tolerance or test was changed."
+}

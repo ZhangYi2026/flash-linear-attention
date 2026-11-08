@@ -1,0 +1,2 @@
+name, driver_version, memory.used [MiB], utilization.gpu [%], clocks.current.sm [MHz], clocks.current.memory [MHz], temperature.gpu, power.draw [W]
+NVIDIA A800-SXM4-80GB, 550.163.01, 1 MiB, 0 %, 210 MHz, 1593 MHz, 27, 60.19 W

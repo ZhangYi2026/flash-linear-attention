@@ -1,0 +1,251 @@
+{
+  "revision": "f5c2e241af362fe8926a02e6abd5b2ad04bb3f86",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "device_selector": "GPU-aa88f58e-182d-a91c-20a7-e1adb55e2158",
+  "capability": [
+    8,
+    0
+  ],
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "cuda_runtime": "12.8",
+  "flags": {
+    "FLA_REWY": "1",
+    "FLA_DISABLE_BACKEND_DISPATCH": "0",
+    "FLA_FLASH_QLA": "0",
+    "FLA_TILELANG": "0",
+    "FLA_CI_ENV": "0",
+    "FLA_CACHE_RESULTS": "0"
+  },
+  "saving_policy": "upstream default recompute; output_final_state=True; initial-state gradient included",
+  "timing": "CUDA graph; 10 samples of 100 ms per mode; median; Python dispatch excluded",
+  "memory": "eager allocated peak minus live inputs (B also excludes the forward graph); returned gradients included",
+  "rows": [
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 77.89688014020824,
+      "samples_us": [
+        77.53542119806463,
+        77.92457512446812,
+        77.92174599387428,
+        77.90459526909723,
+        77.83771412713186,
+        77.88916501131925,
+        77.6137113571167,
+        77.61643383954022,
+        77.95200177601406,
+        77.9508658215008
+      ],
+      "additional_peak_bytes": 4816896,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 131.85706933339435,
+      "samples_us": [
+        131.85258771552415,
+        131.31093184153238,
+        131.85706933339435,
+        131.36576824500912,
+        131.88616955866578,
+        131.85258771552415,
+        131.8656007448832,
+        131.88616955866578,
+        131.85706933339435,
+        131.85706933339435
+      ],
+      "additional_peak_bytes": 5947392,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 407.5470430798589,
+      "samples_us": [
+        406.40111940096966,
+        407.44590759277344,
+        407.7117114985755,
+        407.561224860114,
+        407.62181715531784,
+        407.53286129960384,
+        406.3448074760787,
+        407.77276415343675,
+        407.5752605091442,
+        407.50972502822174
+      ],
+      "additional_peak_bytes": 46530560,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 573.0047861735027,
+      "samples_us": [
+        573.3375867207845,
+        573.1189210536116,
+        573.1072107950846,
+        572.6463953653971,
+        573.0901400248209,
+        570.2656110127766,
+        572.9791959126791,
+        572.9366561113778,
+        573.0303764343262,
+        572.81707127889
+      ],
+      "additional_peak_bytes": 53149696,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "B",
+      "median_us": 77.54697013560117,
+      "samples_us": [
+        77.46033802210728,
+        77.46953689135039,
+        77.55581083751859,
+        77.1563917982812,
+        77.54831130688007,
+        77.54117874872117,
+        77.55833751750443,
+        77.5535061674298,
+        77.54562896432228,
+        77.54831130688007
+      ],
+      "additional_peak_bytes": 4947968,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "FB",
+      "median_us": 135.52283521356253,
+      "samples_us": [
+        130.20343014172144,
+        130.15771763665336,
+        130.19428934369768,
+        129.65276785064162,
+        135.52730125293397,
+        135.52730125293397,
+        135.5210994852,
+        135.53875890271416,
+        135.5452621192263,
+        135.52457094192505
+      ],
+      "additional_peak_bytes": 6144000,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "B",
+      "median_us": 310.28156684624196,
+      "samples_us": [
+        309.7743453266464,
+        310.1916874156279,
+        310.10837161663886,
+        310.3366222196412,
+        310.27200384047427,
+        310.29188285753565,
+        310.2916937607985,
+        310.2911298520097,
+        310.23651538508955,
+        310.3655485006479
+      ],
+      "additional_peak_bytes": 48485376,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "FB",
+      "median_us": 443.01919514322515,
+      "samples_us": [
+        443.0212481268521,
+        443.04168433473825,
+        442.9439987455096,
+        443.04118333039463,
+        443.11631642855133,
+        443.03541524069647,
+        442.7310423417525,
+        443.0171421595982,
+        443.0103128606623,
+        443.0080141339983
+      ],
+      "additional_peak_bytes": 56280576,
+      "rewy_selection_verified": true
+    }
+  ]
+}

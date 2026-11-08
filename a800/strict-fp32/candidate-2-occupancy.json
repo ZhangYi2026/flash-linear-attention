@@ -1,0 +1,434 @@
+{
+  "gpu": "GPU-3bffd5d2-3e59-3525-6211-22749909c412",
+  "command_exit_code": 0,
+  "other_process_observed": false,
+  "audit_errors": false,
+  "samples": [
+    {
+      "elapsed_seconds": 0.101,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 2.207,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 4.265,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 6.322,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 8.38,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 10.445,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 12.524,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 14.638,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 16.72,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 18.798,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 20.887,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 22.996,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 25.062,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 27.15,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 29.271,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 31.353,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 33.431,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 35.514,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 37.604,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 39.681,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 41.758,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 43.838,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 45.914,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 47.972,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 50.03,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 52.108,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 54.176,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 56.237,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 58.296,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 60.355,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 62.421,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 64.511,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 66.588,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 68.693,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 70.786,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 72.925,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 75.047,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 77.13,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 79.209,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 81.303,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 83.379,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 85.477,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 87.573,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 89.666,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 91.755,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 93.849,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 95.985,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 98.054,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 100.166,
+      "processes": [
+        {
+          "pid": 2666848,
+          "is_this_benchmark": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "baseline": "98193113ecb7835143252a786e06933e371b67cc",
+  "candidate": "7608606ab33ee4fc570dd3999053a34851761636",
+  "files": {
+    "ENVs.md": "085473d741e6ea0b7da7614fb2dc9f53b28ee9e70c293618a877b5b2b1a3c7c5",
+    "fla/ops/gated_delta_rule/README.md": "6505e047b8ba052a42d85e23d8ca0eb1633bc5b901d2af207bc91515955a5234",
+    "fla/ops/gated_delta_rule/__init__.py": "859a03e8c10da4ec6049596e23a228ebf6ba69cc3ea2810ffa1db2558196408d",
+    "fla/ops/gated_delta_rule/backends/rewy.py": "7f89daa64d205dc83e6d1a2550123de9a74e6d2bf7dfbedf30d5ede3697b69f3",
+    "fla/ops/gated_delta_rule/chunk.py": "ed6ca6414fd534130a9e2664b43500eea730f069410717256852faf818823991",
+    "tests/ops/test_gdn.py": "4ef1110f37a712d2fb5024920b3cd4419a5e386985708a7fc9068be7c890ad92"
+  },
+  "numerical_tests_revision": "161dfe02f6b1b814fdd9140e68c17da8e1a9f64e",
+  "post_test_change": "ENVs.md wording/table alignment only; runtime and test files byte-identical",
+  "intermediate_doc_revision": "f5c2e241af362fe8926a02e6abd5b2ad04bb3f86"
+}

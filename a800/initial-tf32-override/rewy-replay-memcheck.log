@@ -1,0 +1,8 @@
+========= COMPUTE-SANITIZER
+{"case": "case-0.pt", "passed": true}
+{"case": "case-1.pt", "passed": true}
+{"case": "case-2.pt", "passed": true}
+{"case": "case-3.pt", "passed": true}
+{"case": "case-4.pt", "passed": true}
+Five exact production-kernel calls replayed successfully.
+========= ERROR SUMMARY: 0 errors

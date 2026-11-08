@@ -1,0 +1,251 @@
+{
+  "revision": "98193113ecb7835143252a786e06933e371b67cc",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "device_selector": "GPU-aa88f58e-182d-a91c-20a7-e1adb55e2158",
+  "capability": [
+    8,
+    0
+  ],
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "cuda_runtime": "12.8",
+  "flags": {
+    "FLA_REWY": "0",
+    "FLA_DISABLE_BACKEND_DISPATCH": "0",
+    "FLA_FLASH_QLA": "0",
+    "FLA_TILELANG": "0",
+    "FLA_CI_ENV": "0",
+    "FLA_CACHE_RESULTS": "0"
+  },
+  "saving_policy": "upstream default recompute; output_final_state=True; initial-state gradient included",
+  "timing": "CUDA graph; 10 samples of 100 ms per mode; median; Python dispatch excluded",
+  "memory": "eager allocated peak minus live inputs (B also excludes the forward graph); returned gradients included",
+  "rows": [
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 93.00735711072929,
+      "samples_us": [
+        93.13637711281001,
+        93.00539659899334,
+        92.99944167913394,
+        93.00931762246525,
+        93.36260862128678,
+        93.3804622916288,
+        93.00539659899334,
+        93.0153397952809,
+        93.00329544964958,
+        93.00539659899334
+      ],
+      "additional_peak_bytes": 5881856,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 147.6498322609143,
+      "samples_us": [
+        147.5912444996384,
+        147.03435523837223,
+        147.66682363023943,
+        147.66276799715484,
+        147.6467450459798,
+        147.64307553951556,
+        147.65291947584885,
+        147.6567866755467,
+        147.63323160318228,
+        147.66276799715484
+      ],
+      "additional_peak_bytes": 7012352,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 433.064588686315,
+      "samples_us": [
+        433.3086125990924,
+        432.93610538344785,
+        432.9646738564096,
+        433.21520016517167,
+        433.04585247505,
+        433.00838005252,
+        433.04585247505,
+        433.0903248614576,
+        433.1946600051153,
+        433.08332489758004
+      ],
+      "additional_peak_bytes": 54984704,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 598.2149499573858,
+      "samples_us": [
+        597.6812289311335,
+        598.3015390542837,
+        597.9963082533617,
+        598.3334541320802,
+        598.2268277336568,
+        598.3774147781671,
+        598.2030721811147,
+        598.1766195858226,
+        597.5233113990639,
+        598.3171837002624
+      ],
+      "additional_peak_bytes": 61603840,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "B",
+      "median_us": 93.51680278778076,
+      "samples_us": [
+        93.51680278778076,
+        93.41305494308472,
+        93.44332558768137,
+        93.52101555353478,
+        93.5274951065643,
+        93.40631648113853,
+        93.51680278778076,
+        93.52101555353478,
+        93.5104012489319,
+        93.537978184076
+      ],
+      "additional_peak_bytes": 6012928,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "FB",
+      "median_us": 150.42162992516342,
+      "samples_us": [
+        146.54693798143037,
+        146.52603986311934,
+        146.52603986311934,
+        146.51559323680644,
+        146.51391983032227,
+        155.0233602523804,
+        154.31052811291755,
+        154.29632186889648,
+        155.0106126434949,
+        155.04196225380412
+      ],
+      "additional_peak_bytes": 7208960,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "B",
+      "median_us": 337.8631156167866,
+      "samples_us": [
+        337.5246675708626,
+        337.97833889345577,
+        337.90056011344814,
+        337.8820772524233,
+        337.8125414436246,
+        337.84415398114993,
+        337.80334569230865,
+        337.92639970779413,
+        337.7663969993592,
+        337.97832682162897
+      ],
+      "additional_peak_bytes": 57049088,
+      "rewy_selection_verified": false
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "FB",
+      "median_us": 469.7436179163234,
+      "samples_us": [
+        469.89061394516307,
+        469.75998256517494,
+        469.80265776316327,
+        469.71547085305923,
+        469.7266246961511,
+        469.81564812038255,
+        469.742923312717,
+        469.74431251992985,
+        469.682092251985,
+        469.7066744168599
+      ],
+      "additional_peak_bytes": 64844288,
+      "rewy_selection_verified": false
+    }
+  ]
+}
