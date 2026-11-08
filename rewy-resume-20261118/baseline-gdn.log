@@ -1,0 +1,772 @@
+
+tests/ops/test_gdn.py::test_chunk_gated_delta_rule_fwd_h_blackwell_triton_guard PASSED [  0%]
+tests/ops/test_gdn.py::test_chunk_fwd_o_blackwell_triton_guard PASSED    [  1%]
+tests/ops/test_gdn.py::test_chunk_bwd_dv_local_blackwell_triton_guard PASSED [  2%]
+tests/ops/test_gdn.py::test_fused_recurrent[B1-T63-H1-HV1-D64-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  3%]
+tests/ops/test_gdn.py::test_fused_recurrent[B2-T500-H4-HV4-D60-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               gk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            gk_ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               gv diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            gv_ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  4%]
+tests/ops/test_gdn.py::test_fused_recurrent[B2-T1000-H2-HV8-D128-scale1-gate_logit_normalizer0.1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  4%]
+tests/ops/test_gdn.py::test_fused_recurrent[B3-T1024-H2-HV2-D128-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  5%]
+tests/ops/test_gdn.py::test_fused_recurrent[B4-T1024-H3-HV3-D128-scale1-gate_logit_normalizer10-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  6%]
+tests/ops/test_gdn.py::test_fused_recurrent[B4-T2048-H4-HV4-D64-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  7%]
+tests/ops/test_gdn.py::test_fused_recurrent[B2-T1024-H4-HV4-D128-scale1-gate_logit_normalizer0.1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000272 ratio: 0.000360
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000136 ratio: 0.000201
+PASSED                                                                   [  8%]
+tests/ops/test_gdn.py::test_fused_recurrent[B2-T1024-H4-HV8-D128-scale1-gate_logit_normalizer10-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001199 ratio: 0.000348
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000280 ratio: 0.000213
+PASSED                                                                   [  8%]
+tests/ops/test_gdn.py::test_fused_recurrent[B16-T1-H4-HV12-D128-scale1-gate_logit_normalizer1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001132 ratio: 0.000291
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000317 ratio: 0.000024
+PASSED                                                                   [  9%]
+tests/ops/test_gdn.py::test_fused_recurrent_default_beta_gva PASSED      [ 10%]
+tests/ops/test_gdn.py::test_chunk[B4-T1024-H4-HV4-D128-scale0.1-gate_logit_normalizer1-mask_p1.0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000733 ratio: 0.002127
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001412 ratio: 0.001439
+INFO     fla.utils.testing:testing.py:32               dq diff: nan ratio: nan
+FAILED                                                                   [ 11%]
+tests/ops/test_gdn.py::test_chunk[B2-T75-H4-HV4-D64-scale1-gate_logit_normalizer0.01-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000556 ratio: 0.000345
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000054 ratio: 0.000214
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000518
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003822 ratio: 0.000304
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000001 ratio: 10.964085
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 12%]
+tests/ops/test_gdn.py::test_chunk[B2-T500-H3-HV3-D60-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000710 ratio: 0.000337
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000072 ratio: 0.000256
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000491
+INFO     fla.utils.testing:testing.py:32               db diff: 0.004631 ratio: 0.000440
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002788 ratio: 0.000660
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000145 ratio: 0.000286
+PASSED                                                                   [ 12%]
+tests/ops/test_gdn.py::test_chunk[B2-T1000-H3-HV3-D64-scale0.1-gate_logit_normalizer1-mask_p0.5-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000133 ratio: 0.000401
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000097 ratio: 0.000304
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002105 ratio: 0.000691
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.003474 ratio: 0.001042
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000036 ratio: 0.000440
+PASSED                                                                   [ 13%]
+tests/ops/test_gdn.py::test_chunk[B3-T1024-H4-HV4-D100-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000758 ratio: 0.000407
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000082 ratio: 0.000302
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000523
+INFO     fla.utils.testing:testing.py:32               db diff: 0.006051 ratio: 0.000282
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000187 ratio: 0.000700
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000004 ratio: 0.000224
+PASSED                                                                   [ 14%]
+tests/ops/test_gdn.py::test_chunk[B4-T1024-H4-HV4-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000100 ratio: 0.000380
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000126 ratio: 0.000347
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000069 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003189 ratio: 0.000487
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002890 ratio: 0.000772
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000035 ratio: 0.000614
+PASSED                                                                   [ 15%]
+tests/ops/test_gdn.py::test_chunk[B2-T1500-H4-HV4-D128-scale0.1-gate_logit_normalizer10-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000229 ratio: 0.001091
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000236 ratio: 0.000756
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000092 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001465 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001770 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.006393 ratio: 0.002069
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.011340 ratio: 0.004588
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000177 ratio: 0.002210
+PASSED                                                                   [ 16%]
+tests/ops/test_gdn.py::test_chunk[B4-T2048-H8-HV8-D64-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000081 ratio: 0.000329
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000095 ratio: 0.000260
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.017059 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.101074 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.100403 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.022469 ratio: 0.000657
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.020891 ratio: 0.001253
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000024 ratio: 0.000306
+PASSED                                                                   [ 16%]
+tests/ops/test_gdn.py::test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] SKIPPED [ 17%]
+tests/ops/test_gdn.py::test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16] SKIPPED [ 18%]
+tests/ops/test_gdn.py::test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16] SKIPPED [ 19%]
+tests/ops/test_gdn.py::test_chunk_with_chunk_size[B1-T64-H2-HV4-D32-scale0.1-gate1.0-torch.float32-chunk16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            ht@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dq@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dk@16 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dv@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            db@16 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dg@16 diff: 0.000001 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32           dh0@16 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 20%]
+tests/ops/test_gdn.py::test_chunk_with_chunk_size[B1-T64-H2-HV4-D32-scale0.1-gate1.0-torch.float32-chunk32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            ht@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dq@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dk@32 diff: 0.000001 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32            dv@32 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            db@32 diff: 0.000003 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32            dg@32 diff: 0.000003 ratio: 0.000002
+INFO     fla.utils.testing:testing.py:32           dh0@32 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 20%]
+tests/ops/test_gdn.py::test_chunk_with_chunk_size[B1-T64-H2-HV4-D32-scale0.1-gate1.0-torch.float32-chunk64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@64 diff: 0.000009 ratio: 0.000024
+INFO     fla.utils.testing:testing.py:32            ht@64 diff: 0.000000 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32            dq@64 diff: 0.000003 ratio: 0.000023
+INFO     fla.utils.testing:testing.py:32            dk@64 diff: 0.000004 ratio: 0.000004
+INFO     fla.utils.testing:testing.py:32            dv@64 diff: 0.000041 ratio: 0.000022
+INFO     fla.utils.testing:testing.py:32            db@64 diff: 0.000079 ratio: 0.000016
+INFO     fla.utils.testing:testing.py:32            dg@64 diff: 0.000033 ratio: 0.000017
+INFO     fla.utils.testing:testing.py:32           dh0@64 diff: 0.000000 ratio: 0.000001
+PASSED                                                                   [ 21%]
+tests/ops/test_gdn.py::test_chunk_beta_sigmoid_in_kernel[B2-T500-H4-HV4-D64-scale1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000153 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000053 ratio: 0.000003
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000954 ratio: 0.000018
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 22%]
+tests/ops/test_gdn.py::test_chunk_beta_sigmoid_in_kernel[B3-T1024-H4-HV4-D128-scale0.1-use_qk_l2norm_in_kernelTrue-allow_neg_eigvalTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000037 ratio: 0.000012
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000046 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000242 ratio: 0.000017
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000307 ratio: 0.000041
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 23%]
+tests/ops/test_gdn.py::test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16] SKIPPED [ 24%]
+tests/ops/test_gdn.py::test_chunk_beta_sigmoid_in_kernel[B4-T2048-H8-HV8-D64-scale0.1-use_qk_l2norm_in_kernelTrue-allow_neg_eigvalFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000007 ratio: 0.000002
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000023 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000023 ratio: 0.000004
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000126 ratio: 0.000012
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 24%]
+tests/ops/test_gdn.py::test_chunk_state_v_first[B1-T63-H1-D64-scale1-gate_logit_normalizer1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 25%]
+tests/ops/test_gdn.py::test_chunk_state_v_first[B2-T500-H3-D60-scale1-gate_logit_normalizer1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 26%]
+tests/ops/test_gdn.py::test_chunk_state_v_first[B3-T1024-H4-D128-scale0.1-gate_logit_normalizer1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 27%]
+tests/ops/test_gdn.py::test_chunk_state_v_first[B4-T2048-H8-D64-scale0.1-gate_logit_normalizer1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000002 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 28%]
+tests/ops/test_gdn.py::test_fused_recurrent_state_v_first[B1-T63-H1-HV1-D64-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 28%]
+tests/ops/test_gdn.py::test_fused_recurrent_state_v_first[B2-T500-H4-HV4-D60-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 29%]
+tests/ops/test_gdn.py::test_fused_recurrent_state_v_first[B2-T1000-H2-HV8-D128-scale1-gate_logit_normalizer0.1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 30%]
+tests/ops/test_gdn.py::test_fused_recurrent_state_v_first[B3-T1024-H2-HV2-D128-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 31%]
+tests/ops/test_gdn.py::test_fused_recurrent_state_v_first[B4-T2048-H4-HV4-D64-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 32%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel[B1-T64-H1-HV1-D64-scale1-has_dt_biasFalse-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 32%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel[B2-T256-H2-HV2-D64-scale1-has_dt_biasTrue-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 33%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel[B2-T512-H2-HV4-D64-scale0.1-has_dt_biasTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 34%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel[B3-T1000-H2-HV8-D128-scale1-has_dt_biasFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 35%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel[B4-T1024-H4-HV4-D128-scale0.1-has_dt_biasTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000015 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 36%]
+tests/ops/test_gdn.py::test_fused_recurrent_beta_sigmoid_in_kernel[B1-T64-H1-HV1-D64-scale1-allow_neg_eigvalFalse-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 36%]
+tests/ops/test_gdn.py::test_fused_recurrent_beta_sigmoid_in_kernel[B2-T512-H2-HV4-D64-scale0.1-allow_neg_eigvalTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000323 ratio: 0.000224
+PASSED                                                                   [ 37%]
+tests/ops/test_gdn.py::test_fused_recurrent_beta_sigmoid_in_kernel[B3-T1000-H2-HV8-D128-scale1-allow_neg_eigvalTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000215 ratio: 0.000191
+PASSED                                                                   [ 38%]
+tests/ops/test_gdn.py::test_fused_recurrent_beta_sigmoid_in_kernel[B4-T1024-H4-HV4-D128-scale0.1-allow_neg_eigvalFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000143 ratio: 0.000205
+PASSED                                                                   [ 39%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel_varlen[H2-HV2-D64-has_dt_biasTrue-cu_seqlens[0, 15, 100, 300]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000015 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 40%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel_varlen[H2-HV4-D64-has_dt_biasFalse-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 40%]
+tests/ops/test_gdn.py::test_fused_recurrent_gate_in_kernel_varlen[H4-HV4-D128-has_dt_biasTrue-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 41%]
+tests/ops/test_gdn.py::test_chunk_varlen[H4-HV4-D60-mask_p0-cu_seqlens[0, 15]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000528 ratio: 0.000272
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000292 ratio: 0.000339
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000537
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002382 ratio: 0.000348
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001953 ratio: 0.000152
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 42%]
+tests/ops/test_gdn.py::test_chunk_varlen[H4-HV4-D64-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000707 ratio: 0.000400
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000347 ratio: 0.000309
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000517
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002717 ratio: 0.000304
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001953 ratio: 0.000318
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 43%]
+tests/ops/test_gdn.py::test_chunk_varlen[H4-HV4-D64-mask_p0.5-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001010 ratio: 0.000405
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000539 ratio: 0.000334
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.007812 ratio: 0.000518
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.005350 ratio: 0.000337
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.007812 ratio: 0.000436
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000488 ratio: 0.000000
+PASSED                                                                   [ 44%]
+tests/ops/test_gdn.py::test_chunk_varlen[H4-HV4-D100-mask_p0-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000655 ratio: 0.000393
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000326 ratio: 0.000336
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.007812 ratio: 0.000510
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.004152 ratio: 0.000311
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.003906 ratio: 0.000437
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 44%]
+tests/ops/test_gdn.py::test_chunk_varlen[H2-HV4-D64-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000803 ratio: 0.000398
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000318 ratio: 0.000327
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.007812 ratio: 0.000610
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003437 ratio: 0.000311
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001953 ratio: 0.000444
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 45%]
+tests/ops/test_gdn.py::test_chunk_varlen[H2-HV8-D64-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000850 ratio: 0.000398
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000337 ratio: 0.000315
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.015625 ratio: 0.000584
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003137 ratio: 0.000314
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.003906 ratio: 0.000465
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 46%]
+tests/ops/test_gdn.py::test_chunk_varlen_prefill[H4-D60-mask_p0-cu_seqlens[0, 8192]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001069 ratio: 0.000424
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000303 ratio: 0.000324
+PASSED                                                                   [ 47%]
+tests/ops/test_gdn.py::test_chunk_varlen_prefill[H4-D60-mask_p0-cu_seqlens[0, 15]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000597 ratio: 0.000284
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000328 ratio: 0.000342
+PASSED                                                                   [ 48%]
+tests/ops/test_gdn.py::test_chunk_varlen_prefill[H4-D64-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000875 ratio: 0.000400
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000346 ratio: 0.000319
+PASSED                                                                   [ 48%]
+tests/ops/test_gdn.py::test_chunk_varlen_prefill[H4-D64-mask_p0.5-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000972 ratio: 0.000391
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000345 ratio: 0.000322
+PASSED                                                                   [ 49%]
+tests/ops/test_gdn.py::test_chunk_varlen_prefill[H4-D100-mask_p0-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000923 ratio: 0.000395
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000409 ratio: 0.000342
+PASSED                                                                   [ 50%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B2-T75-H4-D64-scale1-has_dt_biasTrue-use_qk_l2normTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000006 ratio: 0.000004
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.001621 ratio: 0.000051
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000318 ratio: 0.000085
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000006 ratio: 0.000002
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.001214 ratio: 0.000077
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000814 ratio: 0.000076
+PASSED                                                                   [ 51%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B2-T500-H3-D60-scale1-has_dt_biasFalse-use_qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000055 ratio: 0.000037
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.001804 ratio: 0.000027
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000722 ratio: 0.000078
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000002 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.002384 ratio: 0.000135
+PASSED                                                                   [ 52%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B2-T1000-H3-D64-scale0.1-has_dt_biasTrue-use_qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000014 ratio: 0.000009
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000183 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000409 ratio: 0.000092
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000057 ratio: 0.000135
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000010 ratio: 0.000037
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.000140 ratio: 0.000054
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000100 ratio: 0.000051
+PASSED                                                                   [ 52%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B3-T1024-H4-D100-scale1-has_dt_biasTrue-use_qk_l2normTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000019 ratio: 0.000011
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.005940 ratio: 0.000050
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000767 ratio: 0.000087
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000021 ratio: 0.000007
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.006496 ratio: 0.000157
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.005150 ratio: 0.000138
+PASSED                                                                   [ 53%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B4-T1024-H4-D128-scale0.1-has_dt_biasFalse-use_qk_l2normTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000035 ratio: 0.000021
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000038 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.001764 ratio: 0.000087
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000174 ratio: 0.000117
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000008 ratio: 0.000011
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.002657 ratio: 0.000193
+PASSED                                                                   [ 54%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel[B4-T2048-H8-D64-scale0.1-has_dt_biasTrue-use_qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000031 ratio: 0.000014
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000517 ratio: 0.000042
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000135 ratio: 0.000087
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000004 ratio: 0.000008
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.001101 ratio: 0.000152
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000948 ratio: 0.000152
+PASSED                                                                   [ 55%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16] SKIPPED [ 56%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16] SKIPPED [ 56%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16] SKIPPED [ 57%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16] SKIPPED [ 58%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_varlen[H4-D60-has_dt_biasTrue-cu_seqlens[0, 15]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000036 ratio: 0.000009
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000025 ratio: 0.000003
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000002 ratio: 0.000002
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.000010 ratio: 0.000003
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000006 ratio: 0.000002
+PASSED                                                                   [ 59%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_varlen[H4-D64-has_dt_biasFalse-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000067 ratio: 0.000015
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000060 ratio: 0.000006
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000044 ratio: 0.000020
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.000043 ratio: 0.000006
+PASSED                                                                   [ 60%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_varlen[H4-D64-has_dt_biasTrue-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000181 ratio: 0.000030
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000108 ratio: 0.000007
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000024 ratio: 0.000017
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.000072 ratio: 0.000014
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000047 ratio: 0.000014
+PASSED                                                                   [ 60%]
+tests/ops/test_gdn.py::test_chunk_gate_in_kernel_varlen[H4-D100-has_dt_biasTrue-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000015 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000007 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000656 ratio: 0.000020
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000036 ratio: 0.000015
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000001 ratio: 0.000002
+INFO     fla.utils.testing:testing.py:32           dA_log diff: 0.000118 ratio: 0.000016
+INFO     fla.utils.testing:testing.py:32         ddt_bias diff: 0.000074 ratio: 0.000014
+PASSED                                                                   [ 61%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype0-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000001 ratio: 0.000000
+PASSED                                                                   [ 62%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype0-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000004 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000029 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000015 ratio: 0.000000
+PASSED                                                                   [ 63%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype0-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000031 ratio: 0.000000
+PASSED                                                                   [ 64%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype0-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000122 ratio: 0.000000
+PASSED                                                                   [ 64%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype1-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000002 ratio: 0.000000
+PASSED                                                                   [ 65%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype1-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000015 ratio: 0.000000
+PASSED                                                                   [ 66%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype1-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000034 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000046 ratio: 0.000000
+PASSED                                                                   [ 67%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype1-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000011 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000061 ratio: 0.000000
+PASSED                                                                   [ 68%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype2-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000002 ratio: 0.000000
+PASSED                                                                   [ 68%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype2-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000027 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000013 ratio: 0.000000
+PASSED                                                                   [ 69%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype2-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000031 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000046 ratio: 0.000000
+PASSED                                                                   [ 70%]
+tests/ops/test_gdn.py::test_gate[1.0-dtype2-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000011 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000057 ratio: 0.000000
+PASSED                                                                   [ 71%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype0-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 72%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype0-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000004 ratio: 0.000000
+PASSED                                                                   [ 72%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype0-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000031 ratio: 0.000000
+PASSED                                                                   [ 73%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype0-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 74%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype1-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 75%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype1-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000023 ratio: 0.000000
+PASSED                                                                   [ 76%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype1-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000031 ratio: 0.000000
+PASSED                                                                   [ 76%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype1-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000011 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 77%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype2-B1-T32-HV2-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 78%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype2-B2-T64-HV4-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000006 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000010 ratio: 0.000000
+PASSED                                                                   [ 79%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype2-B4-T128-HV8-biasTrue] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000008 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbias diff: 0.000031 ratio: 0.000000
+PASSED                                                                   [ 80%]
+tests/ops/test_gdn.py::test_gate[1e-08-dtype2-B4-T128-HV16-biasFalse] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000011 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dA diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 80%]
+tests/ops/test_gdn.py::test_prepare_wy_repr_bwd_no_g[B1-T128-H1-HV1-D64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000244 ratio: 0.000000
+PASSED                                                                   [ 81%]
+tests/ops/test_gdn.py::test_prepare_wy_repr_bwd_no_g[B2-T256-H2-HV4-D64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000488 ratio: 0.000000
+PASSED                                                                   [ 82%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.bfloat16] SKIPPED [ 83%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.bfloat16] SKIPPED [ 84%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B1-T4096-H16-HV16-D128-torch.bfloat16] SKIPPED [ 84%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.float16] SKIPPED [ 85%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.float16] SKIPPED [ 86%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B1-T1024-H2-HV8-D128-torch.bfloat16] SKIPPED [ 87%]
+tests/ops/test_gdn.py::test_flash_qla_chunk[B2-T2048-H4-HV16-D128-torch.bfloat16] SKIPPED [ 88%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_varlen[H4-D128-cu[0, 256, 500, 1000]] SKIPPED [ 88%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_varlen[H8-D128-cu[0, 100, 300, 1200, 2000]] SKIPPED [ 89%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_varlen[H16-D128-cu[0, 101, 303, 1205, 3007, 4096]] SKIPPED [ 90%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_state_v_first[B1-T1024-H4-D128] SKIPPED [ 91%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_state_v_first[B2-T2048-H8-D128] SKIPPED [ 92%]
+tests/ops/test_gdn.py::test_flash_qla_verifier_rejects PASSED            [ 92%]
+tests/ops/test_gdn.py::test_flash_qla_verifier_sm120_accepts_forward PASSED [ 93%]
+tests/ops/test_gdn.py::test_flash_qla_verifier_sm120_rejects_backward PASSED [ 94%]
+tests/ops/test_gdn.py::test_flash_qla_verifier_sm120_rejects_float16 PASSED [ 95%]
+tests/ops/test_gdn.py::test_flash_qla_sm120_flag_is_exact_capability PASSED [ 96%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.bfloat16] SKIPPED [ 96%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_forward_only[B2-T2048-H8-HV8-D128-torch.bfloat16] SKIPPED [ 97%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.float16] SKIPPED [ 98%]
+tests/ops/test_gdn.py::test_flash_qla_chunk_forward_only[B1-T1024-H2-HV8-D128-torch.bfloat16] SKIPPED [ 99%]
+tests/ops/test_gdn.py::test_chunk_bwd_tilelang_backend SKIPPED (Tile...) [100%]
+
+=================================== FAILURES ===================================
+_ test_chunk[B4-T1024-H4-HV4-D128-scale0.1-gate_logit_normalizer1-mask_p1.0-use_qk_l2norm_in_kernelFalse-torch.float16] _
+tests/ops/test_gdn.py:261: in test_chunk
+    assert_close('dq', ref_dq, tri_dq, 0.008)
+fla/utils/testing.py:35: in assert_close
+    assert not torch.isnan(ref).any(), f"{prefix}: NaN detected in ref"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: dq: NaN detected in ref
+------------------------------ Captured log call -------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000733 ratio: 0.002127
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001412 ratio: 0.001439
+INFO     fla.utils.testing:testing.py:32               dq diff: nan ratio: nan
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_rewy_resume_20261118/baseline-gdn.xml -
+=========================== short test summary info ============================
+SKIPPED [3] tests/ops/test_gdn.py:209: GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run.
+SKIPPED [1] tests/ops/test_gdn.py:375: GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run.
+SKIPPED [4] tests/ops/test_gdn.py:1079: GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run.
+SKIPPED [7] tests/ops/test_gdn.py:1421: FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package
+SKIPPED [3] tests/ops/test_gdn.py:1477: FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package
+SKIPPED [2] tests/ops/test_gdn.py:1552: FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package
+SKIPPED [4] tests/ops/test_gdn.py:1760: FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package
+SKIPPED [1] tests/ops/test_gdn.py:1810: TileLang is unavailable
+================== 1 failed, 99 passed, 25 skipped in 41.03s ===================

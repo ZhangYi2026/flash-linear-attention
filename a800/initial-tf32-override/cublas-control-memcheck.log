@@ -1,0 +1,35 @@
+========= COMPUTE-SANITIZER
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuCtxGetLimit.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xf63a55] in libcublasLt.so.12
+=========         Host Frame: cublasLtCtxInit [0xf63d74] in libcublasLt.so.12
+=========         Host Frame: cublasCreate_v2 [0x1701c2] in libcublas.so.12
+=========         Host Frame: at::cuda::(anonymous namespace)::createCublasHandle(cublasContext**) [0x360c9ea] in libtorch_cuda.so
+=========         Host Frame: at::cuda::getCurrentCUDABlasHandle() [0x360f3e2] in libtorch_cuda.so
+=========         Host Frame: void at::cuda::blas::bgemm_internal_cublas<float, float>(char, char, long, long, long, at::OpMathType<float>::type, float const*, long, long, float const*, long, long, at::OpMathType<float>::type, float*, long, long, long) [0x35bd260] in libtorch_cuda.so
+=========         Host Frame: at::native::(anonymous namespace)::baddbmm_out_cuda_impl(at::Tensor const&, at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar const&, c10::Scalar const&) [clone .isra.0] [0x363ae0a] in libtorch_cuda.so
+=========         Host Frame: at::native::structured_bmm_out_cuda::impl(at::Tensor const&, at::Tensor const&, at::Tensor const&) [0x363bcc4] in libtorch_cuda.so
+=========         Host Frame: at::(anonymous namespace)::wrapper_CUDA_bmm(at::Tensor const&, at::Tensor const&) [0x3333da2] in libtorch_cuda.so
+=========         Host Frame: c10::impl::wrap_kernel_functor_unboxed_<c10::impl::detail::WrapFunctionIntoFunctor_<c10::CompileTimeFunctionPointer<at::Tensor (at::Tensor const&, at::Tensor const&), &at::(anonymous namespace)::wrapper_CUDA_bmm>, at::Tensor, c10::guts::typelist::typelist<at::Tensor const&, at::Tensor const&> >, at::Tensor (at::Tensor const&, at::Tensor const&)>::call(c10::OperatorKernel*, c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x3333dfe] in libtorch_cuda.so
+=========         Host Frame: at::_ops::bmm::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x27e8468] in libtorch_cpu.so
+=========         Host Frame: torch::autograd::VariableType::(anonymous namespace)::bmm(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x4d5d44a] in libtorch_cpu.so
+=========         Host Frame: c10::impl::wrap_kernel_functor_unboxed_<c10::impl::detail::WrapFunctionIntoFunctor_<c10::CompileTimeFunctionPointer<at::Tensor (c10::DispatchKeySet, at::Tensor const&, at::Tensor const&), &torch::autograd::VariableType::(anonymous namespace)::bmm>, at::Tensor, c10::guts::typelist::typelist<c10::DispatchKeySet, at::Tensor const&, at::Tensor const&> >, at::Tensor (c10::DispatchKeySet, at::Tensor const&, at::Tensor const&)>::call(c10::OperatorKernel*, c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x4d5da01] in libtorch_cpu.so
+=========         Host Frame: at::_ops::bmm::call(at::Tensor const&, at::Tensor const&) [0x282924b] in libtorch_cpu.so
+=========         Host Frame: torch::autograd::THPVariable_bmm(_object*, _object*, _object*) [0x59917e] in libtorch_python.so
+=========         Host Frame:  [0x18208e] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x149184] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: PyEval_EvalCode [0x1d58ea] in python
+=========         Host Frame:  [0x208b41] in python
+=========         Host Frame:  [0x2b4e92] in python
+=========         Host Frame: _PyRun_SimpleFileObject [0x2b4bf9] in python
+=========         Host Frame: _PyRun_AnyFileObject [0x2b4a2e] in python
+=========         Host Frame: Py_RunMain [0x2bca94] in python
+=========         Host Frame: Py_BytesMain [0x2bc57c] in python
+=========         Host Frame:  [0x2a1c9] in libc.so.6
+=========         Host Frame: __libc_start_main [0x2a28a] in libc.so.6
+=========         Host Frame: _start [0x257ce4] in python
+=========         Host Frame: <module> in check_cublas_memcheck.py:8
+========= 
+Standalone torch.bmm completed with finite output.
+========= ERROR SUMMARY: 1 error

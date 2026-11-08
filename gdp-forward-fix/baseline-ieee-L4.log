@@ -1,0 +1,11 @@
+INFO:fla.utils.hardware:Blackwell detected: registering default global_scratch allocator.
+INFO:fla.utils.testing:          output diff: 0.078125 ratio: 0.006866
+Traceback (most recent call last):
+  File "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/run_model_repro.py", line 20, in <module>
+    check_forward(args.layers,args.batch,args.length,4,64,GatedDeltaProductConfig,use_l2warp=False,attnres_block_size=None,dtype=torch.bfloat16,varlen=True)
+  File "/home/zhang_e/.cache/fla-rewy-pr-20261108/baseline/tests/models/utils.py", line 126, in check_forward
+    assert_close("output", output_fixed.view(1, B * T, -1), output_var, 1e-3)
+  File "/home/zhang_e/.cache/fla-rewy-pr-20261108/baseline/fla/utils/testing.py", line 41, in assert_close
+    assert error_rate < ratio, msg
+           ^^^^^^^^^^^^^^^^^^
+AssertionError:           output diff: 0.078125 ratio: 0.006866

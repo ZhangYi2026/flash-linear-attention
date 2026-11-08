@@ -1,0 +1,154 @@
+========= COMPUTE-SANITIZER
+
+tests/ops/test_gdn.py::test_rewy_chunk[bf16-tail] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.backends:backends.py:198 [FLA Backend] fla.ops.gated_delta_rule.chunk.chunk_gated_delta_rule_bwd_dqkvbg -> rewy
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuCtxGetLimit.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame:  [0xf63a55] in libcublasLt.so.12
+=========         Host Frame: cublasLtCtxInit [0xf63d74] in libcublasLt.so.12
+=========         Host Frame: cublasCreate_v2 [0x1701c2] in libcublas.so.12
+=========         Host Frame: at::cuda::(anonymous namespace)::createCublasHandle(cublasContext**) [0x360c9ea] in libtorch_cuda.so
+=========         Host Frame: at::cuda::getCurrentCUDABlasHandle() [0x360f3e2] in libtorch_cuda.so
+=========         Host Frame: void at::cuda::blas::bgemm_internal_cublas<float, float>(char, char, long, long, long, at::OpMathType<float>::type, float const*, long, long, float const*, long, long, at::OpMathType<float>::type, float*, long, long, long) [0x35bd260] in libtorch_cuda.so
+=========         Host Frame: at::native::(anonymous namespace)::baddbmm_out_cuda_impl(at::Tensor const&, at::Tensor const&, at::Tensor const&, at::Tensor const&, c10::Scalar const&, c10::Scalar const&) [clone .isra.0] [0x363ae0a] in libtorch_cuda.so
+=========         Host Frame: at::native::structured_bmm_out_cuda::impl(at::Tensor const&, at::Tensor const&, at::Tensor const&) [0x363bcc4] in libtorch_cuda.so
+=========         Host Frame: at::(anonymous namespace)::wrapper_CUDA_bmm(at::Tensor const&, at::Tensor const&) [0x3333da2] in libtorch_cuda.so
+=========         Host Frame: c10::impl::wrap_kernel_functor_unboxed_<c10::impl::detail::WrapFunctionIntoFunctor_<c10::CompileTimeFunctionPointer<at::Tensor (at::Tensor const&, at::Tensor const&), &at::(anonymous namespace)::wrapper_CUDA_bmm>, at::Tensor, c10::guts::typelist::typelist<at::Tensor const&, at::Tensor const&> >, at::Tensor (at::Tensor const&, at::Tensor const&)>::call(c10::OperatorKernel*, c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x3333dfe] in libtorch_cuda.so
+=========         Host Frame: at::_ops::bmm::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x27e8468] in libtorch_cpu.so
+=========         Host Frame: torch::autograd::VariableType::(anonymous namespace)::bmm(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x4d5d44a] in libtorch_cpu.so
+=========         Host Frame: c10::impl::wrap_kernel_functor_unboxed_<c10::impl::detail::WrapFunctionIntoFunctor_<c10::CompileTimeFunctionPointer<at::Tensor (c10::DispatchKeySet, at::Tensor const&, at::Tensor const&), &torch::autograd::VariableType::(anonymous namespace)::bmm>, at::Tensor, c10::guts::typelist::typelist<c10::DispatchKeySet, at::Tensor const&, at::Tensor const&> >, at::Tensor (c10::DispatchKeySet, at::Tensor const&, at::Tensor const&)>::call(c10::OperatorKernel*, c10::DispatchKeySet, at::Tensor const&, at::Tensor const&) [0x4d5da01] in libtorch_cpu.so
+=========         Host Frame: at::_ops::bmm::call(at::Tensor const&, at::Tensor const&) [0x282924b] in libtorch_cpu.so
+=========         Host Frame: at::native::sumproduct_pair(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, bool) [clone .constprop.0] [0x1c40560] in libtorch_cpu.so
+=========         Host Frame: at::native::einsum(std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long>) [0x1c46d5e] in libtorch_cpu.so
+=========         Host Frame: c10::impl::wrap_kernel_functor_unboxed_<c10::impl::detail::WrapFunctionIntoFunctor_<c10::CompileTimeFunctionPointer<at::Tensor (std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long>), &at::(anonymous namespace)::(anonymous namespace)::wrapper_CompositeImplicitAutograd__einsum>, at::Tensor, c10::guts::typelist::typelist<std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long> > >, at::Tensor (std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long>)>::call(c10::OperatorKernel*, c10::DispatchKeySet, std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long>) [0x2d48cd6] in libtorch_cpu.so
+=========         Host Frame: at::_ops::einsum::call(std::basic_string_view<char, std::char_traits<char> >, c10::ArrayRef<at::Tensor>, c10::OptionalArrayRef<long>) [0x26bf816] in libtorch_cpu.so
+=========         Host Frame: torch::autograd::THPVariable_einsum(_object*, _object*, _object*) [0x4f37ed] in libtorch_python.so
+=========         Host Frame:  [0x18208e] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x149184] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x14aa99] in python
+=========         Host Frame:  [0x1a3627] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x14924d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x14aa99] in python
+=========         Host Frame:  [0x1a3627] in python
+=========         Host Frame: PyObject_Call [0x14b30b] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1db55a] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x14aa99] in python
+=========         Host Frame:  [0x1a3627] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x14924d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x14aa99] in python
+=========         Host Frame:  [0x1a3627] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x14924d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: _PyObject_Call_Prepend [0x14aa99] in python
+=========         Host Frame:  [0x1a3627] in python
+=========         Host Frame: _PyObject_MakeTpCall [0x14924d] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame: PyEval_EvalCode [0x1d58ea] in python
+=========         Host Frame:  [0x1d347b] in python
+=========         Host Frame:  [0x181f0c] in python
+=========         Host Frame: PyObject_Vectorcall [0x149b84] in python
+=========         Host Frame: _PyEval_EvalFrameDefault [0x1d73c8] in python
+=========         Host Frame:  [0x2bcce1] in python
+=========         Host Frame: Py_RunMain [0x2bc911] in python
+=========         Host Frame: Py_BytesMain [0x2bc57c] in python
+=========         Host Frame:  [0x2a1c9] in libc.so.6
+=========         Host Frame: __libc_start_main [0x2a28a] in libc.so.6
+=========         Host Frame: _start [0x257ce4] in python
+=========         Host Frame: einsum in functional.py:373
+=========         Host Frame: naive_recurrent_gated_delta_rule in naive.py:59
+=========         Host Frame: test_rewy_chunk in test_gdn.py:1877
+=========         Host Frame: pytest_pyfunc_call in python.py:167
+=========         Host Frame: _multicall in _execution.py:147
+=========         Host Frame: _hookexec in _manager.py:183
+=========         Host Frame: __call__ in _caller.py:197
+=========         Host Frame: runtest in python.py:1707
+=========         Host Frame: pytest_runtest_call in runner.py:184
+=========         Host Frame: _multicall in _execution.py:147
+=========         Host Frame: _hookexec in _manager.py:183
+=========         Host Frame: __call__ in _caller.py:197
+=========         Host Frame: <lambda> in runner.py:250
+=========         Host Frame: from_call in runner.py:361
+=========         Host Frame: call_and_report in runner.py:249
+=========         Host Frame: runtestprotocol in runner.py:139
+=========         Host Frame: pytest_runtest_protocol in runner.py:118
+=========         Host Frame: _multicall in _execution.py:147
+=========         Host Frame: _hookexec in _manager.py:183
+=========         Host Frame: __call__ in _caller.py:197
+=========         Host Frame: pytest_runtestloop in main.py:408
+=========         Host Frame: _multicall in _execution.py:147
+=========         Host Frame: _hookexec in _manager.py:183
+=========         Host Frame: __call__ in _caller.py:197
+=========         Host Frame: _main in main.py:384
+=========         Host Frame: wrap_session in main.py:330
+=========         Host Frame: pytest_cmdline_main in main.py:377
+=========         Host Frame: _multicall in _execution.py:147
+=========         Host Frame: _hookexec in _manager.py:183
+=========         Host Frame: __call__ in _caller.py:197
+=========         Host Frame: _main in __init__.py:229
+=========         Host Frame: _console_main in __init__.py:253
+=========         Host Frame: <module> in __main__.py:9
+=========         Host Frame: _run_code in <frozen runpy>:88
+=========         Host Frame: _run_module_as_main in <frozen runpy>:198
+========= 
+========= Program hit CUDA_ERROR_INVALID_VALUE (error 1) due to "invalid argument" on CUDA API call to cuCtxGetLimit.
+========= 
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000996 ratio: 0.003338
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.007837 ratio: 0.002930
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.015625 ratio: 0.003590
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.375000 ratio: 0.004532
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.031250 ratio: 0.003358
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.111168 ratio: 0.002605
+INFO     fla.utils.testing:testing.py:32               db diff: 0.045459 ratio: 0.002705
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000126 ratio: 0.000950
+PASSED                                                                   [ 20%]
+tests/ops/test_gdn.py::test_rewy_chunk[fp16-asymmetric] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000243 ratio: 0.000433
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001130 ratio: 0.000408
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000390
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.031250 ratio: 0.000606
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.028577 ratio: 0.000756
+INFO     fla.utils.testing:testing.py:32               db diff: 0.005327 ratio: 0.000398
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000099 ratio: 0.000428
+PASSED                                                                   [ 40%]
+tests/ops/test_gdn.py::test_rewy_chunk[value-first-short] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001213 ratio: 0.003297
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.012313 ratio: 0.003115
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.015625 ratio: 0.003709
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.250000 ratio: 0.004889
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.031250 ratio: 0.003430
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.216091 ratio: 0.003556
+INFO     fla.utils.testing:testing.py:32               db diff: 0.059842 ratio: 0.001749
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000312 ratio: 0.001484
+PASSED                                                                   [ 60%]
+tests/ops/test_gdn.py::test_rewy_chunk[multiple-chunks] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000115 ratio: 0.000475
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000921 ratio: 0.000394
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.031250 ratio: 0.000576
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.022950 ratio: 0.000867
+INFO     fla.utils.testing:testing.py:32               db diff: 0.006962 ratio: 0.000343
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000044 ratio: 0.000407
+PASSED                                                                   [ 80%]
+tests/ops/test_gdn.py::test_rewy_chunk[packed-short-segments] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000105 ratio: 0.000413
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000865 ratio: 0.000124
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.062500 ratio: 0.000555
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.038382 ratio: 0.000509
+INFO     fla.utils.testing:testing.py:32               db diff: 0.007130 ratio: 0.000376
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000479 ratio: 0.000049
+PASSED                                                                   [100%]
+
+====================== 5 passed, 134 deselected in 6.77s =======================
+========= ERROR SUMMARY: 2 errors

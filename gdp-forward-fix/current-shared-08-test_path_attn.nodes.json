@@ -1,0 +1,16 @@
+[
+  "tests/ops/test_path_attn.py::test_parallel[B5-T512-H2-HQ8-D128-use_forget_gateTrue-torch.bfloat16]",
+  "tests/ops/test_path_attn.py::test_parallel[B3-T1024-H2-HQ8-D64-use_forget_gateTrue-torch.bfloat16]",
+  "tests/ops/test_path_attn.py::test_parallel[B2-T2000-H1-HQ4-D64-use_forget_gateFalse-torch.bfloat16]",
+  "tests/ops/test_path_attn.py::test_parallel[B1-T4000-H1-HQ2-D128-use_forget_gateFalse-torch.bfloat16]",
+  "tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D128-use_forget_gateFalse-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+  "tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D128-use_forget_gateTrue-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+  "tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D64-use_forget_gateTrue-cu_seqlens[0, 841, 889, 4096]-torch.float16]",
+  "tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D64-use_forget_gateFalse-cu_seqlens[0, 841, 889, 2000, 3000, 4096]-torch.float16]",
+  "tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ16-D128-use_forget_gateTrue-cu_seqlens[0, 500, 1023, 2000, 3000, 4096]-torch.float16]",
+  "tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel0-T]",
+  "tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel1-T]",
+  "tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel2-NUM_BLOCKS]",
+  "tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel3-NUM_BLOCKS]",
+  "tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel4-NUM_BLOCKS]"
+]

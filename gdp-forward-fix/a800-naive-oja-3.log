@@ -1,0 +1,9 @@
+
+tests/ops/test_oja.py::test_naive_chunk_oja[B4-T2048-H4-D256-scale1-gate_logit_normalizer100-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000002 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000065 ratio: 0.000001
+PASSED                                                                   [100%]
+
+- generated xml file: /workspace/fla_gdp_forward_fix_20261109/a800-naive-oja-3.xml -
+============================== 1 passed in 2.13s ===============================

@@ -1,0 +1,50 @@
+[
+  {
+    "branch": "rewy-gdn-backward",
+    "tested_commit": "7608606ab33ee4fc570dd3999053a34851761636",
+    "published_commit": "7608606ab33ee4fc570dd3999053a34851761636",
+    "tree": "d0ba01b234eeaa51ffda589dcf0219ed79d8885b",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  },
+  {
+    "branch": "fix-kda-cache-test-inputs",
+    "tested_commit": "6aa27ca0e095ef91f74b6f068c5ec8de07d96970",
+    "published_commit": "7ef2a96ce53738da5318f8c88b22c7d5fa42085c",
+    "tree": "f0f127a6c70fb36af5a8b5ee1d786d306b8a8624",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  },
+  {
+    "branch": "fix-sm120-solve-tril-consistency",
+    "tested_commit": "44db92fd7c343544c58c505edf217dceb1931636",
+    "published_commit": "8ee088911fd60764a5eaf44e7d492135dc200748",
+    "tree": "f7cab64a64f44ed896a0a69f1e85b9a8579e38df",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  },
+  {
+    "branch": "fix-sm120-oja-single-stage",
+    "tested_commit": "b6172a05f2405a73c96ec190ee41f4083faa31a8",
+    "published_commit": "b6172a05f2405a73c96ec190ee41f4083faa31a8",
+    "tree": "df55c3d8f8e6ea85a4ee1034acd17d45265f5f6b",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  },
+  {
+    "branch": "fix-solve-tril-tma-coordinates",
+    "tested_commit": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+    "published_commit": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+    "tree": "b0f2244c7c3632712ea8ba4e892acb910956515e",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  },
+  {
+    "branch": "rewy-gdn-solver-integration",
+    "tested_commit": "2d2eef814c0fe14346dfdf13ee5b82724ee8d090",
+    "published_commit": "f616ab692567014e12341547934c627a5af3c352",
+    "tree": "afafb5562e9bdbeb428abd2d88456aea00d53ec5",
+    "tree_identical": true,
+    "commits_ahead_of_upstream": 1
+  }
+]

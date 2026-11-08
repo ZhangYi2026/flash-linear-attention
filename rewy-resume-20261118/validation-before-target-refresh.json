@@ -1,0 +1,206 @@
+[
+  {
+    "name": "baseline-gdn",
+    "commit": "cc4648a3b35c27c6bc6b3cfb0079a14d57bcbc5b",
+    "exitcode": 1,
+    "command": [
+      "/home/zhang_e/.venvs/kda-residual-wy-20261023/bin/python",
+      "-m",
+      "pytest",
+      "tests/ops/test_gdn.py",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_rewy_resume_20261118/baseline-gdn.xml"
+    ],
+    "environment": {
+      "FLA_CI_ENV": "0",
+      "FLA_FLASH_QLA": "0",
+      "FLA_TILELANG": "0",
+      "FLA_DISABLE_BACKEND_DISPATCH": "0",
+      "FLA_CACHE_RESULTS": "1",
+      "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": "0",
+      "TRITON_F32_DEFAULT": "ieee",
+      "FLA_TRIL_PRECISION": "ieee"
+    },
+    "rewy": "0",
+    "collected": 125,
+    "passed": 99,
+    "failed": [
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B4-T1024-H4-HV4-D128-scale0.1-gate_logit_normalizer1-mask_p1.0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "2.270"
+        },
+        "failure": "<testcase classname=\"tests.ops.test_gdn\" name=\"test_chunk[B4-T1024-H4-HV4-D128-scale0.1-gate_logit_normalizer1-mask_p1.0-use_qk_l2norm_in_kernelFalse-torch.float16]\" time=\"2.270\"><failure message=\"AssertionError: dq: NaN detected in ref\">tests/ops/test_gdn.py:261: in test_chunk\n    assert_close('dq', ref_dq, tri_dq, 0.008)\nfla/utils/testing.py:35: in assert_close\n    assert not torch.isnan(ref).any(), f\"{prefix}: NaN detected in ref\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   AssertionError: dq: NaN detected in ref</failure></testcase>"
+      }
+    ],
+    "skipped": [
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B1-T4096-H16-HV16-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.float16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.float16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk[B2-T2048-H4-HV16-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_varlen[H4-D128-cu[0, 256, 500, 1000]]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_varlen[H8-D128-cu[0, 100, 300, 1200, 2000]]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_varlen[H16-D128-cu[0, 101, 303, 1205, 3007, 4096]]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_state_v_first[B1-T1024-H4-D128]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_state_v_first[B2-T2048-H8-D128]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_forward_only[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_flash_qla_chunk_forward_only[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gdn",
+        "name": "test_chunk_bwd_tilelang_backend",
+        "time": "0.002"
+      }
+    ]
+  },
+  {
+    "name": "baseline-dependent",
+    "commit": "cc4648a3b35c27c6bc6b3cfb0079a14d57bcbc5b",
+    "exitcode": 4,
+    "command": [
+      "/home/zhang_e/.venvs/kda-residual-wy-20261023/bin/python",
+      "-m",
+      "pytest",
+      "tests/ops/test_gdn_kernels.py::test_gdn_full_bwd",
+      "tests/ops/test_gdp.py",
+      "tests/layers/test_gated_deltanet.py",
+      "tests/layers/test_mom_shared_no_grad.py",
+      "tests/models/test_modeling_gated_deltanet.py",
+      "tests/models/test_modeling_gated_deltaproduct.py",
+      "tests/models/test_modeling_mom.py",
+      "tests/cp/test_gdn.py",
+      "tests/cp/test_gdp.py",
+      "tests/cp/test_intracard.py::test_chunk_gdn_grouped_heads",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_rewy_resume_20261118/baseline-dependent.xml"
+    ],
+    "environment": {
+      "FLA_CI_ENV": "0",
+      "FLA_FLASH_QLA": "0",
+      "FLA_TILELANG": "0",
+      "FLA_DISABLE_BACKEND_DISPATCH": "0",
+      "FLA_CACHE_RESULTS": "1",
+      "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": "0",
+      "TRITON_F32_DEFAULT": "ieee",
+      "FLA_TRIL_PRECISION": "ieee"
+    },
+    "rewy": "0",
+    "collected": 0,
+    "passed": 0,
+    "failed": [],
+    "skipped": []
+  }
+]

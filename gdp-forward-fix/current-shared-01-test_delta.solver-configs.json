@@ -1,0 +1,73 @@
+{
+  "solver_sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d",
+  "is_sm120": true,
+  "active_warp_candidates": [
+    2
+  ],
+  "used_configs": [
+    {
+      "key": "(1, 64, False, 'torch.float32', 'torch.float16')",
+      "num_warps": 2,
+      "num_stages": 3,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(4, 64, False, 'torch.float32', 'torch.float16')",
+      "num_warps": 2,
+      "num_stages": 2,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(3, 64, False, 'torch.float32', 'torch.float16')",
+      "num_warps": 2,
+      "num_stages": 3,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(8, 64, False, 'torch.float32', 'torch.float16')",
+      "num_warps": 2,
+      "num_stages": 4,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(2, 64, False, 'torch.float32', 'torch.bfloat16')",
+      "num_warps": 2,
+      "num_stages": 4,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(2, 64, True, 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32')",
+      "num_warps": 2,
+      "num_stages": 5,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(3, 64, True, 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32')",
+      "num_warps": 2,
+      "num_stages": 5,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    },
+    {
+      "key": "(4, 64, True, 'torch.float32', 'torch.float16', 'torch.int32', 'torch.int32')",
+      "num_warps": 2,
+      "num_stages": 2,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    }
+  ]
+}

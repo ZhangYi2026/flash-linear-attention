@@ -1,0 +1,8 @@
+{
+  "solver_sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d",
+  "is_sm120": true,
+  "active_warp_candidates": [
+    2
+  ],
+  "used_configs": []
+}

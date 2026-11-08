@@ -1,0 +1,95 @@
+
+tests/ops/test_path_attn.py::test_parallel[B5-T512-H2-HQ8-D128-use_forget_gateTrue-torch.bfloat16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.015625 ratio: 0.003251
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.007812 ratio: 0.005534
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.031250 ratio: 0.004791
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.062500 ratio: 0.001155
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.010303 ratio: 0.000869
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.202379 ratio: 0.009425
+INFO     fla.utils.testing:testing.py:32               db diff: 0.051502 ratio: 0.007222
+PASSED                                                                   [  7%]
+tests/ops/test_path_attn.py::test_parallel[B3-T1024-H2-HQ8-D64-use_forget_gateTrue-torch.bfloat16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.015625 ratio: 0.003874
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.007812 ratio: 0.006444
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.017090 ratio: 0.005414
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.062500 ratio: 0.001213
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.011012 ratio: 0.000737
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.181211 ratio: 0.011211
+INFO     fla.utils.testing:testing.py:32               db diff: 0.060604 ratio: 0.008118
+PASSED                                                                   [ 14%]
+tests/ops/test_path_attn.py::test_parallel[B2-T2000-H1-HQ4-D64-use_forget_gateFalse-torch.bfloat16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.015625 ratio: 0.003614
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.007812 ratio: 0.006491
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.015625 ratio: 0.005557
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.062500 ratio: 0.000943
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.139241 ratio: 0.011878
+INFO     fla.utils.testing:testing.py:32               db diff: 0.049952 ratio: 0.008621
+PASSED                                                                   [ 21%]
+tests/ops/test_path_attn.py::test_parallel[B1-T4000-H1-HQ2-D128-use_forget_gateFalse-torch.bfloat16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.007812 ratio: 0.003353
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.007812 ratio: 0.005919
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.011719 ratio: 0.005138
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.031250 ratio: 0.000787
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.105894 ratio: 0.009924
+INFO     fla.utils.testing:testing.py:32               db diff: 0.041335 ratio: 0.007871
+PASSED                                                                   [ 28%]
+tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D128-use_forget_gateFalse-cu_seqlens[0, 15, 333, 2048]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001038 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.004479 ratio: 0.000688
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002730 ratio: 0.000681
+PASSED                                                                   [ 35%]
+tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D128-use_forget_gateTrue-cu_seqlens[0, 15, 333, 2048]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001148 ratio: 0.000583
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.004532 ratio: 0.000682
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002602 ratio: 0.000670
+PASSED                                                                   [ 42%]
+tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D64-use_forget_gateTrue-cu_seqlens[0, 841, 889, 4096]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000772 ratio: 0.000457
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.003463 ratio: 0.000696
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002127 ratio: 0.000710
+PASSED                                                                   [ 50%]
+tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ4-D64-use_forget_gateFalse-cu_seqlens[0, 841, 889, 2000, 3000, 4096]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.003826 ratio: 0.000700
+INFO     fla.utils.testing:testing.py:32               db diff: 0.002787 ratio: 0.000703
+PASSED                                                                   [ 57%]
+tests/ops/test_path_attn.py::test_parallel_varlen[H2-HQ16-D128-use_forget_gateTrue-cu_seqlens[0, 500, 1023, 2000, 3000, 4096]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.007812 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001113 ratio: 0.000484
+INFO     fla.utils.testing:testing.py:32               dw diff: 0.008393 ratio: 0.000680
+INFO     fla.utils.testing:testing.py:32               db diff: 0.005858 ratio: 0.000676
+PASSED                                                                   [ 64%]
+tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel0-T] PASSED [ 71%]
+tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel1-T] PASSED [ 78%]
+tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel2-NUM_BLOCKS] PASSED [ 85%]
+tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel3-NUM_BLOCKS] PASSED [ 92%]
+tests/ops/test_path_attn.py::test_parallel_backward_kernels_take_runtime_lengths[kernel4-NUM_BLOCKS] PASSED [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/current-shared-08-test_path_attn.xml -
+======================== 14 passed in 215.85s (0:03:35) ========================

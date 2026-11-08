@@ -1,0 +1,12 @@
+[
+  {
+    "name": "submission-tma-20261113",
+    "commit": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+    "archive_sha256": "18681ab7e7655b335e757087f780bafd3bfd1060d3f7f1270ef745d82e29e701"
+  },
+  {
+    "name": "submission-integration-20261113",
+    "commit": "2d2eef814c0fe14346dfdf13ee5b82724ee8d090",
+    "archive_sha256": "ffda6f78ed8399b88a6bdec25df3fbb4a2a79be6b1d58020c44738252058214d"
+  }
+]

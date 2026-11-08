@@ -1,0 +1,15 @@
+[
+  "tests/ops/test_delta.py::test_chunk[B1-T63-H1-D64-scale1-False]",
+  "tests/ops/test_delta.py::test_chunk[B2-T100-H4-D60-scale0.1-False]",
+  "tests/ops/test_delta.py::test_chunk[B2-T1000-H3-D128-scale0.1-False]",
+  "tests/ops/test_delta.py::test_chunk[B2-T1024-H4-D128-scale1-True]",
+  "tests/ops/test_delta.py::test_chunk[B3-T2000-H4-D128-scale0.1-False]",
+  "tests/ops/test_delta.py::test_chunk[B4-T2048-H8-D64-scale0.1-False]",
+  "tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk16]",
+  "tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk32]",
+  "tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk64]",
+  "tests/ops/test_delta.py::test_chunk_varlen[H2-D64-cu_seqlens[0, 15]-torch.float16]",
+  "tests/ops/test_delta.py::test_chunk_varlen[H3-D60-cu_seqlens[0, 111, 500]-torch.float16]",
+  "tests/ops/test_delta.py::test_chunk_varlen[H3-D64-cu_seqlens[0, 256, 500, 900, 1000]-torch.float16]",
+  "tests/ops/test_delta.py::test_chunk_varlen[H4-D100-cu_seqlens[0, 15, 100, 300, 1200, 1599, 1800, 2000]-torch.float16]"
+]

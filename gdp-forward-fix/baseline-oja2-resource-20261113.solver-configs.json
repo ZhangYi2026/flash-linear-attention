@@ -1,0 +1,19 @@
+{
+  "solver_sha256": "2b916799bdd660a864ff49ce6f66c11bfbdafc4bf06b169f9634a3f0738ccef7",
+  "is_sm120": true,
+  "active_warp_candidates": [
+    2,
+    4,
+    8
+  ],
+  "used_configs": [
+    {
+      "key": "(3, 64, False, 'torch.float32', 'torch.bfloat16')",
+      "num_warps": 2,
+      "num_stages": 4,
+      "kwargs": {
+        "DOT_PRECISION": "ieee"
+      }
+    }
+  ]
+}

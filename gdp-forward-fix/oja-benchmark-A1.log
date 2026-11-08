@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/testing.py", line 111, in do_bench_cudagraph
+    fn()
+  File "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py", line 45, in backward
+    return torch.autograd.grad((out, final), leaves, (do, dht), retain_graph=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/autograd/__init__.py", line 503, in grad
+    result = _engine_run_backward(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: operation would make the legacy stream depend on a capturing blocking stream
+Search for `cudaErrorStreamCaptureImplicit' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py", line 65, in <module>
+    samples = [triton.testing.do_bench_cudagraph(backward, rep=100) * 1000 for _ in range(5)]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/testing.py", line 106, in do_bench_cudagraph
+    with torch.cuda.graph(g):
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/cuda/graphs.py", line 265, in __exit__
+    self.cuda_graph.capture_end()
+  File "/home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/cuda/graphs.py", line 128, in capture_end
+    super().capture_end()
+torch.AcceleratorError: CUDA error: operation failed due to a previous error during capture
+Search for `cudaErrorStreamCaptureInvalidated' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

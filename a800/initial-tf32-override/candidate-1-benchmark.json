@@ -1,0 +1,251 @@
+{
+  "revision": "f5c2e241af362fe8926a02e6abd5b2ad04bb3f86",
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "device_selector": "GPU-aa88f58e-182d-a91c-20a7-e1adb55e2158",
+  "capability": [
+    8,
+    0
+  ],
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "cuda_runtime": "12.8",
+  "flags": {
+    "FLA_REWY": "1",
+    "FLA_DISABLE_BACKEND_DISPATCH": "0",
+    "FLA_FLASH_QLA": "0",
+    "FLA_TILELANG": "0",
+    "FLA_CI_ENV": "0",
+    "FLA_CACHE_RESULTS": "0"
+  },
+  "saving_policy": "upstream default recompute; output_final_state=True; initial-state gradient included",
+  "timing": "CUDA graph; 10 samples of 100 ms per mode; median; Python dispatch excluded",
+  "memory": "eager allocated peak minus live inputs (B also excludes the forward graph); returned gradients included",
+  "rows": [
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 77.87496791717754,
+      "samples_us": [
+        77.80538038773969,
+        77.84332419341465,
+        77.87519801746714,
+        77.88857468613634,
+        77.88800341742379,
+        77.87934724275055,
+        77.8705423528498,
+        77.87934724275055,
+        77.87097265960973,
+        77.87473781688793
+      ],
+      "additional_peak_bytes": 4816896,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 130.79893589019775,
+      "samples_us": [
+        130.79893589019775,
+        130.80341307843318,
+        130.79893589019775,
+        130.78951835632324,
+        130.82996281710538,
+        130.8248289700212,
+        130.76827081583315,
+        130.79893589019775,
+        130.80716955250708,
+        130.7943069328696
+      ],
+      "additional_peak_bytes": 5947392,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "B",
+      "median_us": 413.283164915162,
+      "samples_us": [
+        420.47767639160156,
+        413.2584658536044,
+        413.19323015642595,
+        413.35466172960065,
+        413.308402088201,
+        413.26855300763333,
+        413.3608731356534,
+        413.22627636270784,
+        413.29777682269065,
+        413.2212378761985
+      ],
+      "additional_peak_bytes": 46530560,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "dense-bf16",
+      "B": 1,
+      "T": 4096,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": null,
+      "mode": "FB",
+      "median_us": 578.4177473035909,
+      "samples_us": [
+        577.888551305552,
+        575.5313937946902,
+        578.4490585327148,
+        578.3165790995614,
+        578.2746486976499,
+        578.5770416259766,
+        578.6367734273274,
+        578.5855929056803,
+        578.386436074467,
+        578.5686686887578
+      ],
+      "additional_peak_bytes": 53149696,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "B",
+      "median_us": 77.48806703437879,
+      "samples_us": [
+        77.58042650315367,
+        77.52077556350856,
+        77.53630592709496,
+        77.45535850524902,
+        77.14635250615139,
+        77.21353494204007,
+        77.21353494204007,
+        77.21353494204007,
+        77.55815065824069,
+        77.53630592709496
+      ],
+      "additional_peak_bytes": 4947968,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-fp16",
+      "B": 1,
+      "T": 1024,
+      "H": 4,
+      "K": 64,
+      "V": 64,
+      "dtype": "torch.float16",
+      "lengths": [
+        73,
+        951
+      ],
+      "mode": "FB",
+      "median_us": 130.48365032463744,
+      "samples_us": [
+        130.5061055902849,
+        130.52342619214738,
+        130.49712097435668,
+        130.47915592528224,
+        129.94207184890223,
+        130.47916010806435,
+        130.47916010806435,
+        130.4881405412105,
+        130.47915592528224,
+        130.51509020621316
+      ],
+      "additional_peak_bytes": 6144000,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "B",
+      "median_us": 310.8531188964844,
+      "samples_us": [
+        325.963300817153,
+        310.7941315905883,
+        310.8046849568685,
+        310.81948421969275,
+        310.83520889282227,
+        310.93101690311244,
+        310.84032058715815,
+        310.93759536743164,
+        310.8915138244629,
+        310.86591720581055
+      ],
+      "additional_peak_bytes": 48485376,
+      "rewy_selection_verified": true
+    },
+    {
+      "case": "packed-bf16",
+      "B": 1,
+      "T": 4149,
+      "H": 4,
+      "K": 128,
+      "V": 128,
+      "dtype": "torch.bfloat16",
+      "lengths": [
+        1,
+        64,
+        511,
+        1024,
+        2549
+      ],
+      "mode": "FB",
+      "median_us": 444.1766329485961,
+      "samples_us": [
+        444.27229228772615,
+        443.8850438153302,
+        444.05569853606045,
+        444.1979196336534,
+        444.2034667392947,
+        444.01894783487126,
+        444.28550495820883,
+        444.21619322241804,
+        444.1553462635387,
+        444.01571100408376
+      ],
+      "additional_peak_bytes": 56280576,
+      "rewy_selection_verified": true
+    }
+  ]
+}

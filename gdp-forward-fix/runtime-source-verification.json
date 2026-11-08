@@ -1,0 +1,24 @@
+{
+  "fix_commit": "034c3d41a18f1c6a941918c39396ef004ec757ca",
+  "integration_commit": "476bf096937afe433ff867ef073a2524e5144678",
+  "integration_files_verified": 810,
+  "source_files_verified": 808,
+  "pairs": [
+    {
+      "baseline": "baseline",
+      "candidate": "solver-fix",
+      "changed_files": [
+        "fla/ops/utils/solve_tril.py"
+      ],
+      "solver_sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d"
+    },
+    {
+      "baseline": "candidate",
+      "candidate": "solver-fix-rewy",
+      "changed_files": [
+        "fla/ops/utils/solve_tril.py"
+      ],
+      "solver_sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d"
+    }
+  ]
+}

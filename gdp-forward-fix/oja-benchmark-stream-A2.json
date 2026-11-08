@@ -1,0 +1,123 @@
+{
+  "tag": "stream-A2",
+  "repo": "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+  "source_sha256": "fb8aeca67ff414f95af01d89b4edc6f6b32139d819494d2e3b9cd48c5faa242c",
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "boundary": "public autograd backward including default recomputation, state and normalization gradients; CUDA Graph, excludes forward and Python dispatch",
+  "rows": [
+    {
+      "shape": [
+        1,
+        256,
+        2,
+        64,
+        64
+      ],
+      "qk_dtype": "torch.float16",
+      "v_dtype": "torch.float32",
+      "layout": "dense",
+      "bounds": [
+        0,
+        256
+      ],
+      "input_sha256": "16b56431ed578594c1a408a596e4ee83c727a5e7b7c31cfa75ff68106e211138",
+      "bwd_h_config": "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+      "samples_us": [
+        211.09560132026672,
+        212.798835292007,
+        216.7366393407186,
+        215.37855863571167,
+        215.00334306196734
+      ],
+      "median_us": 215.00334306196734,
+      "original_reference_thresholds_passed": true
+    },
+    {
+      "shape": [
+        1,
+        256,
+        2,
+        64,
+        64
+      ],
+      "qk_dtype": "torch.float16",
+      "v_dtype": "torch.float32",
+      "layout": "packed",
+      "bounds": [
+        0,
+        1,
+        65,
+        256
+      ],
+      "input_sha256": "2c667d7556b42bad4a6d54adbd6c6df10c6bdb14092afa09fb5c3c81e92dfb54",
+      "bwd_h_config": "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+      "samples_us": [
+        184.40687391493054,
+        182.41913166451963,
+        180.43210627668995,
+        179.81414943933487,
+        180.02632747996938
+      ],
+      "median_us": 180.43210627668995,
+      "original_reference_thresholds_passed": true
+    },
+    {
+      "shape": [
+        1,
+        256,
+        2,
+        64,
+        64
+      ],
+      "qk_dtype": "torch.bfloat16",
+      "v_dtype": "torch.float32",
+      "layout": "dense",
+      "bounds": [
+        0,
+        256
+      ],
+      "input_sha256": "04015601ef66f2364b1a21e46b7a44acad17efbfc1c437f0ee3cd2c6248186f9",
+      "bwd_h_config": "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+      "samples_us": [
+        215.89917014626897,
+        209.236798286438,
+        207.85322032991002,
+        232.36800076668723,
+        209.9853580280886
+      ],
+      "median_us": 209.9853580280886,
+      "original_reference_thresholds_passed": true
+    },
+    {
+      "shape": [
+        1,
+        256,
+        2,
+        64,
+        64
+      ],
+      "qk_dtype": "torch.bfloat16",
+      "v_dtype": "torch.float32",
+      "layout": "packed",
+      "bounds": [
+        0,
+        1,
+        65,
+        256
+      ],
+      "input_sha256": "f5716782c6b55a7b4627006875b5725e20ab865e867fc9699cf8d8bd2fa6d19e",
+      "bwd_h_config": "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+      "samples_us": [
+        179.8141845067342,
+        184.08220718646874,
+        176.13307854224897,
+        178.06908383088955,
+        174.6537699843898
+      ],
+      "median_us": 178.06908383088955,
+      "original_reference_thresholds_passed": true
+    }
+  ]
+}

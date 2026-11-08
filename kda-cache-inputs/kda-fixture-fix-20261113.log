@@ -1,0 +1,15 @@
+
+tests/cp/test_intracard.py::test_chunk_kda_cache 
+-------------------------------- live log call ---------------------------------
+INFO     fla.backends:backends.py:198 [FLA Backend] fla.ops.common.chunk_delta_h.chunk_gated_delta_rule_fwd_h -> intracard_cp
+PASSED                                                                   [ 12%]
+tests/cp/test_intracard.py::test_backend_default PASSED                  [ 25%]
+tests/cp/test_intracard.py::test_backend_enabled[disabled] PASSED        [ 37%]
+tests/cp/test_intracard.py::test_backend_enabled[enabled] PASSED         [ 50%]
+tests/cp/test_intracard.py::test_chunk_gdn_grouped_heads PASSED          [ 62%]
+tests/cp/test_intracard.py::test_intracard_backend_dispatch[chunk_offsets_omitted] PASSED [ 75%]
+tests/cp/test_intracard.py::test_intracard_backend_dispatch[chunk_offsets_none] PASSED [ 87%]
+tests/cp/test_intracard.py::test_intracard_backend_verifier_rejects_graph_mode PASSED [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/kda-fixture-fix-20261113.xml -
+============================== 8 passed in 1.96s ===============================

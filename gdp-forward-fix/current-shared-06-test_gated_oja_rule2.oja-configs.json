@@ -1,0 +1,125 @@
+{
+  "source_sha256": "4b0d100ae7c281f43c2e3b534e43c5017af62fb2425de47683f8673ac19c2793",
+  "used_configs": [
+    {
+      "key": "(1, 64, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(3, 60, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(3, 128, 128, 64, True, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 128, 256, 64, True, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16')",
+      "num_warps": 2,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(4, 128, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 256, 64, 64, True, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 60, 96, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 64, 64, 64, True, 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 64, 64, 64, True, 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 64, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 64, 64, 16, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 4,
+      "num_stages": 4,
+      "kwargs": {
+        "BK": 32
+      }
+    },
+    {
+      "key": "(2, 64, 64, 32, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16')",
+      "num_warps": 2,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(4, 60, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.int64', 'torch.int64')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(4, 128, 128, 64, True, 'torch.bfloat16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16', 'torch.bfloat16', 'torch.int64', 'torch.int64')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    },
+    {
+      "key": "(2, 64, 64, 64, True, 'torch.float16', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float32', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.float16', 'torch.int64', 'torch.int64')",
+      "num_warps": 4,
+      "num_stages": 1,
+      "kwargs": {
+        "BK": 16
+      }
+    }
+  ]
+}

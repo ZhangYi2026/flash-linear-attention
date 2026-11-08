@@ -1,0 +1,10 @@
+[
+  "tests/cp/test_intracard.py::test_chunk_kda_cache",
+  "tests/cp/test_intracard.py::test_backend_default",
+  "tests/cp/test_intracard.py::test_backend_enabled[disabled]",
+  "tests/cp/test_intracard.py::test_backend_enabled[enabled]",
+  "tests/cp/test_intracard.py::test_chunk_gdn_grouped_heads",
+  "tests/cp/test_intracard.py::test_intracard_backend_dispatch[chunk_offsets_omitted]",
+  "tests/cp/test_intracard.py::test_intracard_backend_dispatch[chunk_offsets_none]",
+  "tests/cp/test_intracard.py::test_intracard_backend_verifier_rejects_graph_mode"
+]

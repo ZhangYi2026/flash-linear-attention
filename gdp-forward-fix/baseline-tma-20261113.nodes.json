@@ -1,0 +1,4 @@
+[
+  "tests/ops/test_solve_tril.py::test_solve_tril[B2-T1000-H5-chunk_size64]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]]"
+]

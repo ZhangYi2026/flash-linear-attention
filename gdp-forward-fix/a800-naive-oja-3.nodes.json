@@ -1,0 +1,3 @@
+[
+  "tests/ops/test_oja.py::test_naive_chunk_oja[B4-T2048-H4-D256-scale1-gate_logit_normalizer100-torch.float16]"
+]

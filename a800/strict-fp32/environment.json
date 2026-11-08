@@ -1,0 +1,21 @@
+{
+  "python": "3.12.3",
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "cuda_runtime": "12.8",
+  "torch_matmul_allow_tf32": false,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-3bffd5d2-3e59-3525-6211-22749909c412",
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": "0",
+    "NVIDIA_TF32_OVERRIDE": null,
+    "FLA_TRIL_PRECISION": null,
+    "FLA_USE_FAST_OPS": null,
+    "FLA_USE_TMA": null,
+    "FLA_CACHE_MODE": null,
+    "FLA_CI_ENV": "0",
+    "FLA_FLASH_QLA": "0",
+    "FLA_TILELANG": "0",
+    "FLA_REWY": "1",
+    "FLA_DISABLE_BACKEND_DISPATCH": null
+  }
+}

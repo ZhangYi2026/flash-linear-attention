@@ -1,0 +1,3 @@
+[
+  "tests/cp/test_intracard.py::test_chunk_kda_cache"
+]

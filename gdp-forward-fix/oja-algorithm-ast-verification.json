@@ -1,0 +1,18 @@
+{
+  "baseline": "0a649e4c7201f0edcba734832773fe8ab371367a",
+  "candidate": "b6172a05f2405a73c96ec190ee41f4083faa31a8",
+  "before_sha256": "fb8aeca67ff414f95af01d89b4edc6f6b32139d819494d2e3b9cd48c5faa242c",
+  "after_sha256": "4b0d100ae7c281f43c2e3b534e43c5017af62fb2425de47683f8673ac19c2793",
+  "only_changed_function": [
+    "_prune_bwd_dhu_configs"
+  ],
+  "unchanged_functions": [
+    "chunk_oja_fwd_kernel_h_blockdim64",
+    "chunk_oja_fwd_h",
+    "chunk_oja_bwd_kernel_dhu_blockdim64",
+    "chunk_oja_bwd_dhu",
+    "chunk_gsa_bwd_k_kernel_dqkvg",
+    "chunk_oja_bwd_kernel_dvwg_h",
+    "chunk_oja_bwd_dvwg_h"
+  ]
+}

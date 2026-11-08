@@ -1,0 +1,140 @@
+[
+  {
+    "dtype": "torch.float32",
+    "config": "autotune",
+    "mismatch_count": 16900,
+    "max_abs": 1.4901161193847656e-08,
+    "first_mismatches": [
+      1537,
+      1601,
+      2051,
+      2116,
+      2240,
+      2304,
+      2368,
+      2369
+    ]
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w2s2",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w2s3",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w2s4",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w2s5",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w4s2",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w4s3",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w4s4",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.float32",
+    "config": "w4s5",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "autotune",
+    "mismatch_count": 2,
+    "max_abs": 4.76837158203125e-07,
+    "first_mismatches": [
+      203912,
+      266176
+    ]
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w2s2",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w2s3",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w2s4",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w2s5",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w4s2",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w4s3",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w4s4",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  },
+  {
+    "dtype": "torch.bfloat16",
+    "config": "w4s5",
+    "mismatch_count": 0,
+    "max_abs": 0.0,
+    "first_mismatches": []
+  }
+]

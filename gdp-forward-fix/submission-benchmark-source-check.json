@@ -1,0 +1,93 @@
+[
+  {
+    "file": "benchmark-A1.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "2b916799bdd660a864ff49ce6f66c11bfbdafc4bf06b169f9634a3f0738ccef7",
+    "matched": true
+  },
+  {
+    "file": "benchmark-B1.json",
+    "revision": "8ee08891",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d",
+    "matched": true
+  },
+  {
+    "file": "benchmark-B2.json",
+    "revision": "8ee08891",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d",
+    "matched": true
+  },
+  {
+    "file": "benchmark-A2.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "2b916799bdd660a864ff49ce6f66c11bfbdafc4bf06b169f9634a3f0738ccef7",
+    "matched": true
+  },
+  {
+    "file": "benchmark-TMA-A1.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "2b916799bdd660a864ff49ce6f66c11bfbdafc4bf06b169f9634a3f0738ccef7",
+    "matched": true
+  },
+  {
+    "file": "benchmark-TMA-B1.json",
+    "revision": "28e74f8",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "08e86d0621772274232174f55365ff109bdaef268fdf500132b88c7778f8cb13",
+    "matched": true
+  },
+  {
+    "file": "benchmark-TMA-B2.json",
+    "revision": "28e74f8",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "08e86d0621772274232174f55365ff109bdaef268fdf500132b88c7778f8cb13",
+    "matched": true
+  },
+  {
+    "file": "benchmark-TMA-A2.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "2b916799bdd660a864ff49ce6f66c11bfbdafc4bf06b169f9634a3f0738ccef7",
+    "matched": true
+  },
+  {
+    "file": "benchmark-TMA-enabled.json",
+    "revision": "28e74f8",
+    "source": "fla/ops/utils/solve_tril.py",
+    "sha256": "08e86d0621772274232174f55365ff109bdaef268fdf500132b88c7778f8cb13",
+    "matched": true
+  },
+  {
+    "file": "oja-benchmark-stream-A1.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/gated_oja_rule/chunk_h.py",
+    "sha256": "fb8aeca67ff414f95af01d89b4edc6f6b32139d819494d2e3b9cd48c5faa242c",
+    "matched": true
+  },
+  {
+    "file": "oja-benchmark-stream-B1.json",
+    "revision": "b6172a05",
+    "source": "fla/ops/gated_oja_rule/chunk_h.py",
+    "sha256": "4b0d100ae7c281f43c2e3b534e43c5017af62fb2425de47683f8673ac19c2793",
+    "matched": true
+  },
+  {
+    "file": "oja-benchmark-stream-B2.json",
+    "revision": "b6172a05",
+    "source": "fla/ops/gated_oja_rule/chunk_h.py",
+    "sha256": "4b0d100ae7c281f43c2e3b534e43c5017af62fb2425de47683f8673ac19c2793",
+    "matched": true
+  },
+  {
+    "file": "oja-benchmark-stream-A2.json",
+    "revision": "0a649e4c",
+    "source": "fla/ops/gated_oja_rule/chunk_h.py",
+    "sha256": "fb8aeca67ff414f95af01d89b4edc6f6b32139d819494d2e3b9cd48c5faa242c",
+    "matched": true
+  }
+]

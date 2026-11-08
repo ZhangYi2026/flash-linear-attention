@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "integration_commit": "2d2eef814c0fe14346dfdf13ee5b82724ee8d090",
+  "integration": {
+    "passed": 235,
+    "skipped": 50
+  },
+  "shared": {
+    "passed": 212,
+    "skipped": 2
+  },
+  "tma_original_failures_preserved": true,
+  "large_offset_modes_passed": [
+    false,
+    true
+  ],
+  "unrun": [
+    "original huge-batch test exceeds available SM120 memory",
+    "datacenter SM90+ ReWY performance"
+  ],
+  "performance_scope": "supplementary affected-device scheduling cost"
+}

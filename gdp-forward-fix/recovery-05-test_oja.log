@@ -1,0 +1,182 @@
+
+tests/ops/test_oja.py::test_fused_recurrent[B1-T63-H1-D64-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000002 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  4%]
+tests/ops/test_oja.py::test_fused_recurrent[B2-T500-H4-D60-scale1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000003 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  8%]
+tests/ops/test_oja.py::test_fused_recurrent[B2-T1000-H8-D128-scale1-gate_logit_normalizer0.1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000004 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 12%]
+tests/ops/test_oja.py::test_fused_recurrent[B3-T1024-H4-D128-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000002 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 16%]
+tests/ops/test_oja.py::test_fused_recurrent[B4-T1024-H8-D128-scale1-gate_logit_normalizer10-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000019 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000001 ratio: 0.000000
+PASSED                                                                   [ 20%]
+tests/ops/test_oja.py::test_fused_recurrent[B4-T2048-H8-D64-scale0.1-gate_logit_normalizer1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 25%]
+tests/ops/test_oja.py::test_chunk_forward[B1-T63-H1-D64-scale1-gate_logit_normalizer0.01-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001750 ratio: 0.000395
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000109 ratio: 0.000196
+PASSED                                                                   [ 29%]
+tests/ops/test_oja.py::test_chunk_forward[B2-T500-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.005722 ratio: 0.000419
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000420 ratio: 0.000302
+PASSED                                                                   [ 33%]
+tests/ops/test_oja.py::test_chunk_forward[B2-T1000-H3-D64-scale0.1-gate_logit_normalizer1-mask_p0.5-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001477 ratio: 0.000489
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000471 ratio: 0.000343
+PASSED                                                                   [ 37%]
+tests/ops/test_oja.py::test_chunk_forward[B3-T1024-H4-D100-scale1-gate_logit_normalizer0.1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.004692 ratio: 0.000407
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000263 ratio: 0.000293
+PASSED                                                                   [ 41%]
+tests/ops/test_oja.py::test_chunk_forward[B4-T1024-H4-D128-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001529 ratio: 0.000462
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000260 ratio: 0.000325
+PASSED                                                                   [ 45%]
+tests/ops/test_oja.py::test_chunk[B4-T4096-H4-D128-scale1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.004487 ratio: 0.000270
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000099 ratio: 0.000309
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.001807 ratio: 0.000299
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.003906 ratio: 0.000524
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000599
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.012602 ratio: 0.000427
+INFO     fla.utils.testing:testing.py:32               db diff: 0.063721 ratio: 0.000524
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.027541 ratio: 0.001996
+PASSED                                                                   [ 50%]
+tests/ops/test_oja.py::test_chunk[B1-T4096-H1-D64-scale1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.002432 ratio: 0.000272
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000077 ratio: 0.000292
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000539 ratio: 0.000229
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000522
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000601
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.005703 ratio: 0.000385
+INFO     fla.utils.testing:testing.py:32               db diff: 0.026217 ratio: 0.000447
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.012599 ratio: 0.001558
+PASSED                                                                   [ 54%]
+tests/ops/test_oja.py::test_chunk[B2-T4096-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.002562 ratio: 0.000272
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000118 ratio: 0.000306
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.001080 ratio: 0.000331
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000528
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000598
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.007008 ratio: 0.000389
+INFO     fla.utils.testing:testing.py:32               db diff: 0.021179 ratio: 0.000440
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.011992 ratio: 0.001553
+PASSED                                                                   [ 58%]
+tests/ops/test_oja.py::test_chunk[B1-T65-H2-D64-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000234 ratio: 0.000267
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000087 ratio: 0.000284
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000070 ratio: 0.000268
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000671 ratio: 0.000407
+INFO     fla.utils.testing:testing.py:32               db diff: 0.001792 ratio: 0.000435
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000694 ratio: 0.001386
+PASSED                                                                   [ 62%]
+tests/ops/test_oja.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            ht@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dh0@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dq@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dk@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dv@16 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            db@16 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dg@16 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 66%]
+tests/ops/test_oja.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            ht@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dh0@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dq@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dk@32 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dv@32 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            db@32 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dg@32 diff: 0.000000 ratio: 0.000001
+PASSED                                                                   [ 70%]
+tests/ops/test_oja.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@64 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            ht@64 diff: 0.000000 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32           dh0@64 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dq@64 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dk@64 diff: 0.000001 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32            dv@64 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            db@64 diff: 0.000001 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dg@64 diff: 0.000001 ratio: 0.000001
+PASSED                                                                   [ 75%]
+tests/ops/test_oja.py::test_chunk_varlen[H4-D60-mask_p0-cu_seqlens[0, 96, 177]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001045 ratio: 0.000467
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000343 ratio: 0.000325
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000536
+INFO     fla.utils.testing:testing.py:32               db diff: 0.001851 ratio: 0.000292
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.001458 ratio: 0.000923
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000169 ratio: 0.000212
+PASSED                                                                   [ 79%]
+tests/ops/test_oja.py::test_chunk_varlen[H16-D128-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001189 ratio: 0.000458
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000440 ratio: 0.000322
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.008301 ratio: 0.000581
+INFO     fla.utils.testing:testing.py:32               db diff: 0.004717 ratio: 0.000385
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002522 ratio: 0.002068
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000200 ratio: 0.000211
+PASSED                                                                   [ 83%]
+tests/ops/test_oja.py::test_chunk_varlen[H4-D64-mask_p0.5-cu_seqlens[0, 256, 500, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.002147 ratio: 0.000436
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000499 ratio: 0.000328
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.007812 ratio: 0.000511
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003573 ratio: 0.000351
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.005906 ratio: 0.000772
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000307 ratio: 0.000182
+PASSED                                                                   [ 87%]
+tests/ops/test_oja.py::test_chunk_varlen[H4-D100-mask_p0-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001322 ratio: 0.000464
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000371 ratio: 0.000356
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.007812 ratio: 0.000583
+INFO     fla.utils.testing:testing.py:32               db diff: 0.003798 ratio: 0.000386
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002062 ratio: 0.002248
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000191 ratio: 0.000215
+PASSED                                                                   [ 91%]
+tests/ops/test_oja.py::test_fused_recurrent_default_beta_gva PASSED      [ 95%]
+tests/ops/test_oja.py::test_chunk_rejects_gva PASSED                     [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/recovery-05-test_oja.xml -
+======================= 24 passed in 1044.11s (0:17:24) ========================

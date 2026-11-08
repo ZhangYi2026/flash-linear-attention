@@ -1,0 +1,15 @@
+{
+  "layers": 2,
+  "batch": 4,
+  "length": 1024,
+  "passed": true,
+  "observations": [
+    {
+      "prefix": "output",
+      "max_abs": 0.03125,
+      "relative_rms": 0.00029373168651580816,
+      "tolerance": 0.001
+    }
+  ],
+  "seconds": 2.187663160999989
+}

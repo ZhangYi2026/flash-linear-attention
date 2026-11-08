@@ -1,0 +1,48 @@
+
+tests/ops/test_gated_oja_rule2.py::test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue] FAILED [100%]
+
+=================================== FAILURES ===================================
+_ test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue] _
+tests/ops/test_gated_oja_rule2.py:199: in test_chunk
+    loss.backward()
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/_tensor.py:625: in backward
+    torch.autograd.backward(
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/autograd/__init__.py:354: in backward
+    _engine_run_backward(
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/autograd/graph.py:841: in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/autograd/function.py:315: in apply
+    return user_fn(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^
+fla/utils/decorators.py:152: in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/amp/autocast_mode.py:573: in decorate_bwd
+    return bwd(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+fla/ops/gated_oja_rule2/chunk.py:74: in backward
+    dq, dk, dv, db, dc, dgv, dh0 = chunk_oja2_bwd(
+fla/ops/gated_oja_rule2/chunk_bwd.py:80: in chunk_oja2_bwd
+    dh, dh0, dk_new = chunk_oja_bwd_dhu(
+fla/ops/gated_oja_rule/chunk_h.py:521: in chunk_oja_bwd_dhu
+    chunk_oja_bwd_kernel_dhu_blockdim64[grid](
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:419: in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:452: in run
+    return self.fn.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:250: in run
+    ret = self.fn.run(
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:756: in run
+    launch_metadata = kernel.launch_metadata(grid, stream, *bound_args.values())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:490: in launch_metadata
+    self._init_handles()
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:464: in _init_handles
+    raise_(OutOfResources(self.metadata.shared, max_shared, "shared memory"))
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:456: in raise_
+    raise err
+E   triton.runtime.errors.OutOfResources: out of resource: shared memory, Required: 425984, Hardware limit: 101376. Reducing block sizes or `num_stages` may help.
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/baseline-oja2-resource-20261113.xml -
+============================== 1 failed in 5.23s ===============================

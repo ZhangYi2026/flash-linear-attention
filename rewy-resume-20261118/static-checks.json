@@ -1,0 +1,14 @@
+{
+  "candidate": "e9fc25f2714a653995120a751e5f9356fd8bab19",
+  "base": "cc4648a3b35c27c6bc6b3cfb0079a14d57bcbc5b",
+  "previous_head": "7608606ab33ee4fc570dd3999053a34851761636",
+  "patch_scope": "Same six-file 478-addition/19-deletion ReWY patch; range-diff changes only surrounding upstream context.",
+  "checks": [
+    {"command": "git diff --check", "exitcode": 0},
+    {"command": "python scripts/check_header.py --check", "exitcode": 0, "result": "All headers OK."},
+    {"command": "python -m pre_commit run --files ENVs.md fla/ops/gated_delta_rule/README.md fla/ops/gated_delta_rule/__init__.py fla/ops/gated_delta_rule/backends/rewy.py fla/ops/gated_delta_rule/chunk.py tests/ops/test_gdn.py", "exitcode": 0, "pre_commit": "4.7.0", "result": "All applicable hooks passed, including Ruff, autopep8 and block-pointer guard."}
+  ],
+  "working_tree_after_checks": "clean",
+  "commits_ahead_of_base": 1,
+  "excluded_work": "No solver, Oja, TMA or KDA fixture fixes are included. Their PRs remain closed."
+}

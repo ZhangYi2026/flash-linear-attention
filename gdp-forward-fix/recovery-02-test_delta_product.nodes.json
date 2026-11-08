@@ -1,0 +1,14 @@
+[
+  "tests/ops/test_delta_product.py::test_chunk[B1-T63-H1-D64-scale0.1-num_householder1-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T200-H3-D60-scale0.1-num_householder1-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T1000-H4-D64-scale0.1-num_householder2-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T1024-H4-D64-scale1-num_householder2-l2normTrue-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T1024-H6-D100-scale1-num_householder2-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B4-T1500-H8-D128-scale0.1-num_householder3-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T2048-H8-D128-scale1-num_householder3-l2normFalse-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk[B2-T2048-H8-D128-scale1-num_householder3-l2normTrue-torch.float16]",
+  "tests/ops/test_delta_product.py::test_chunk_varlen[2-64-3-cu_seqlens0-dtype0]",
+  "tests/ops/test_delta_product.py::test_chunk_varlen[2-100-2-cu_seqlens1-dtype1]",
+  "tests/ops/test_delta_product.py::test_chunk_varlen[2-128-2-cu_seqlens2-dtype2]",
+  "tests/ops/test_delta_product.py::test_chunk_varlen[2-256-3-cu_seqlens3-dtype3]"
+]

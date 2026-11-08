@@ -1,0 +1,30 @@
+{
+  "purpose": "Unchanged pure-PyTorch Oja reference controls; not a validation of the SM120 solver fix",
+  "device": "NVIDIA A800-SXM4-80GB",
+  "gpu_uuid": "GPU-aa88f58e-182d-a91c-20a7-e1adb55e2158",
+  "baseline": "98193113ecb7835143252a786e06933e371b67cc",
+  "tests": [
+    {
+      "test": "tests/ops/test_oja.py::test_naive_chunk_oja[B4-T2048-H8-D128-scale1-gate_logit_normalizer10-torch.float32]",
+      "passed": true,
+      "xml": "a800-naive-oja-0.xml"
+    },
+    {
+      "test": "tests/ops/test_oja.py::test_naive_chunk_oja[B4-T1024-H4-D64-scale0.1-gate_logit_normalizer10-torch.float32]",
+      "passed": true,
+      "xml": "a800-naive-oja-1.xml"
+    },
+    {
+      "test": "tests/ops/test_oja.py::test_naive_chunk_oja[B2-T1536-H4-D128-scale1-gate_logit_normalizer100-torch.float16]",
+      "passed": true,
+      "xml": "a800-naive-oja-2.xml"
+    },
+    {
+      "test": "tests/ops/test_oja.py::test_naive_chunk_oja[B4-T2048-H4-D256-scale1-gate_logit_normalizer100-torch.float16]",
+      "passed": true,
+      "xml": "a800-naive-oja-3.xml"
+    }
+  ],
+  "test_oja_sha256": "e03cdf64003437c0f15b0e6429271091ffecc1fd952c3d83b3ec5201ba062f96",
+  "conftest_sha256": "35e21a13beb4261b7b27e9341aa3f5d729970e869186af7efe299c0f88aee47c"
+}

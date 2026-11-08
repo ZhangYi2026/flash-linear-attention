@@ -1,0 +1,17 @@
+
+tests/cp/test_intracard.py::test_chunk_kda_cache 
+-------------------------------- live log call ---------------------------------
+INFO     fla.backends:backends.py:198 [FLA Backend] fla.ops.common.chunk_delta_h.chunk_gated_delta_rule_fwd_h -> intracard_cp
+FAILED                                                                   [100%]
+
+=================================== FAILURES ===================================
+_____________________________ test_chunk_kda_cache _____________________________
+tests/cp/test_intracard.py:104: in test_chunk_kda_cache
+    assert torch.allclose(o1, o2, atol=1e-4, rtol=1e-4)
+E   AssertionError: assert False
+E    +  where False = <built-in method allclose of type object at 0x77de19dd6c20>(tensor([[[[-0.7617,  0.1338, -0.4316,  ..., -0.6484,  0.0167,  0.9648]],\n\n         [[ 0.4648,  0.4160,  0.0483,  ...,  0.2207, -0.0190,  0.1177]],\n\n         [[ 2.6406,  1.6016,  0.7031,  ...,  3.0312,  0.1904, -1.7109]],\n\n         ...,\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]],\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]],\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]]]],\n       device='cuda:0', dtype=torch.bfloat16), tensor([[[[-0.7617,  0.1338, -0.4316,  ..., -0.6484,  0.0167,  0.9648]],\n\n         [[ 0.4648,  0.4160,  0.0483,  ...,  0.2207, -0.0190,  0.1177]],\n\n         [[ 2.6406,  1.6016,  0.7031,  ...,  3.0312,  0.1904, -1.7109]],\n\n         ...,\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]],\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]],\n\n         [[    nan,     nan,     nan,  ...,     nan,     nan,     nan]]]],\n       device='cuda:0', dtype=torch.bfloat16), atol=0.0001, rtol=0.0001)
+E    +    where <built-in method allclose of type object at 0x77de19dd6c20> = torch.allclose
+------------------------------ Captured log call -------------------------------
+INFO     fla.backends:backends.py:198 [FLA Backend] fla.ops.common.chunk_delta_h.chunk_gated_delta_rule_fwd_h -> intracard_cp
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/latest-baseline-kda.xml -
+============================== 1 failed in 0.89s ===============================

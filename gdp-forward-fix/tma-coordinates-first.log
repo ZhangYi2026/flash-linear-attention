@@ -1,0 +1,44 @@
+
+tests/ops/test_solve_tril.py::test_solve_tril[B1-T63-H1-chunk_size16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32       solve_tril diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 10%]
+tests/ops/test_solve_tril.py::test_solve_tril[B2-T500-H4-chunk_size32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32       solve_tril diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 20%]
+tests/ops/test_solve_tril.py::test_solve_tril[B2-T1000-H5-chunk_size64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32       solve_tril diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 30%]
+tests/ops/test_solve_tril.py::test_solve_tril[B3-T1024-H6-chunk_size64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32       solve_tril diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 40%]
+tests/ops/test_solve_tril.py::test_solve_tril[B4-T2048-H8-chunk_size64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32       solve_tril diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 50%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size16-cu_seqlens[0, 15]] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32 solve_tril_varlen diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 60%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size32-cu_seqlens[0, 256, 500, 1000]] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32 solve_tril_varlen diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 70%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32 solve_tril_varlen diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 80%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size16-cu_seqlens[0, 1, 100, 300, 1200, 2048]] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32 solve_tril_varlen diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 90%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D128-chunk_size32-cu_seqlens[0, 200, 512, 1200, 2048]] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32 solve_tril_varlen diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/tma-coordinates-first.xml -
+====================== 10 passed, 1 deselected in 46.80s =======================

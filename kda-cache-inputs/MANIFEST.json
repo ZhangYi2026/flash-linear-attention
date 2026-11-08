@@ -1,0 +1,132 @@
+[
+  {
+    "file": "audit_collection.py",
+    "bytes": 2756,
+    "sha256": "140c5c95b2a7a8eb61e4dc41ec0cf9d9f51d1c8333870e05babe1932c17a0644"
+  },
+  {
+    "file": "diagnose_kda_20261113.py",
+    "bytes": 2463,
+    "sha256": "a8a266943ef5d6ab46c19e603aebc77c2e381f2ba6f7b8e7ce7f19df064e713a"
+  },
+  {
+    "file": "diagnose_kda_20261113.sh",
+    "bytes": 342,
+    "sha256": "4c7033ef41beb6b08f3cd29f3710172c958ddb34e6034b00bd00c1ad115d98cb"
+  },
+  {
+    "file": "gate_xml.py",
+    "bytes": 585,
+    "sha256": "2d6c58e79509a1e95e5625200598596fdfe8224f7c4606f06f23223ca8ed2da0"
+  },
+  {
+    "file": "kda-control-20261113-baseline.cuda-memory.json",
+    "bytes": 125,
+    "sha256": "f06b4745b785a1dae45b5cbd4cb69de7e66612ecef02f29078fa9ffa7bfa90ec"
+  },
+  {
+    "file": "kda-control-20261113-baseline.exit.json",
+    "bytes": 18,
+    "sha256": "da0beaffbd0ab5742cddb4f07ef2e28cf8cffafc0c6639526eca4fe320d569f8"
+  },
+  {
+    "file": "kda-control-20261113-baseline.log",
+    "bytes": 2291,
+    "sha256": "d7e40eb017d9642c34a3d57b8add967a737cab1740801e2a56676c9658969dd1"
+  },
+  {
+    "file": "kda-control-20261113-baseline.nodes.json",
+    "bytes": 57,
+    "sha256": "2a394ea86d7154db18558938e328918875c7d69e4f3ff412724c19b94d10b18b"
+  },
+  {
+    "file": "kda-control-20261113-baseline.solver-configs.json",
+    "bytes": 187,
+    "sha256": "6a6d26b73be57246b89a055e43895eec12331c9df4eea8f0729241a66a3d9df0"
+  },
+  {
+    "file": "kda-control-20261113-baseline.xml",
+    "bytes": 3057,
+    "sha256": "7e4b68b42a0627860cabe26743ff2394e27466401e32dc806dec0e4126f49518"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.cuda-memory.json",
+    "bytes": 125,
+    "sha256": "f06b4745b785a1dae45b5cbd4cb69de7e66612ecef02f29078fa9ffa7bfa90ec"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.exit.json",
+    "bytes": 18,
+    "sha256": "da0beaffbd0ab5742cddb4f07ef2e28cf8cffafc0c6639526eca4fe320d569f8"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.log",
+    "bytes": 2311,
+    "sha256": "3c203ed3615da7ca7b176a0bb9cf75b352900f67ee97a7f6b6233845bb7e88f5"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.nodes.json",
+    "bytes": 57,
+    "sha256": "2a394ea86d7154db18558938e328918875c7d69e4f3ff412724c19b94d10b18b"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.solver-configs.json",
+    "bytes": 173,
+    "sha256": "110edaa65fb087f044f8c82c365dc42977f9bf612e3c7d4ab1afc4c3dd5a987d"
+  },
+  {
+    "file": "kda-control-20261113-solver-fix-rewy.xml",
+    "bytes": 3070,
+    "sha256": "7c959ce0002a82589d98ce71f8712342fb41007cfc6f8c94e5355228794ff6a0"
+  },
+  {
+    "file": "kda-diagnosis-20261113.json",
+    "bytes": 7761,
+    "sha256": "9ee49eba9ccb84d2c291558103d4b2cea6d911106dc6ffffef723ca3a603b71a"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.cuda-memory.json",
+    "bytes": 127,
+    "sha256": "00754ef8ecdb419588101b34c514dfc59e05904badc198c8dc9610e0b83a8896"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.exit.json",
+    "bytes": 18,
+    "sha256": "0971c071ba448dd579dc08e3bb987e5db27451fffcf7d9c9abeac2507b5beaa6"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.log",
+    "bytes": 1135,
+    "sha256": "b88bd173bd661536465bb8dff62c7bcb56c6306a0a1c89a571c4a6baee373a6a"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.nodes.json",
+    "bytes": 557,
+    "sha256": "42f10e295a1c2fa2d770a6f6236827e6c51ac5955937c4c3782f254b099b3292"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.solver-configs.json",
+    "bytes": 187,
+    "sha256": "6a6d26b73be57246b89a055e43895eec12331c9df4eea8f0729241a66a3d9df0"
+  },
+  {
+    "file": "kda-fixture-fix-20261113.xml",
+    "bytes": 1085,
+    "sha256": "68b3bf654fd9f15bc62cfb1f18a3ed78ba99a795da68b16ccf6e4e0e92fd2b62"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2545,
+    "sha256": "7e70c6af6fe48b1ab337a510f5f7549c133c3a3a8e32516b9c8fa9d84f015dbb"
+  },
+  {
+    "file": "run_kda_control_20261113.py",
+    "bytes": 925,
+    "sha256": "cd0522075cf039a049e3711caed86ee1860063e35146b78b91823faa8e100f5e"
+  },
+  {
+    "file": "run_kda_fixture_fix_20261113.sh",
+    "bytes": 631,
+    "sha256": "e889f0e18956b28af5f0f856831de863d8d8c3f04e773a449e7ea8da54dcc8b7"
+  }
+]

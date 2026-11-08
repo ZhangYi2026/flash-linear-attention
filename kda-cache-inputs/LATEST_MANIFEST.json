@@ -1,0 +1,58 @@
+[
+  {
+    "file": "latest-baseline-kda.cuda-memory.json",
+    "sha256": "f06b4745b785a1dae45b5cbd4cb69de7e66612ecef02f29078fa9ffa7bfa90ec"
+  },
+  {
+    "file": "latest-baseline-kda.exit.json",
+    "sha256": "da0beaffbd0ab5742cddb4f07ef2e28cf8cffafc0c6639526eca4fe320d569f8"
+  },
+  {
+    "file": "latest-baseline-kda.log",
+    "sha256": "10d69581155fe1c80830284e51c7369575ae9216bab1d89671164f8433e7ca3c"
+  },
+  {
+    "file": "latest-baseline-kda.nodes.json",
+    "sha256": "2a394ea86d7154db18558938e328918875c7d69e4f3ff412724c19b94d10b18b"
+  },
+  {
+    "file": "latest-baseline-kda.solver-configs.json",
+    "sha256": "6a6d26b73be57246b89a055e43895eec12331c9df4eea8f0729241a66a3d9df0"
+  },
+  {
+    "file": "latest-baseline-kda.xml",
+    "sha256": "3f1033ff1b5acfaf0303a34b2803890e2ccc1c7aa9e2a6b3c3eb26e8dbe1b290"
+  },
+  {
+    "file": "latest-control-source-hashes.json",
+    "sha256": "b77a9f323a10468e2f4135b830f4da503c2b748c53161088f5b3d75c41d2e2f4"
+  },
+  {
+    "file": "latest-fixed-kda.cuda-memory.json",
+    "sha256": "00754ef8ecdb419588101b34c514dfc59e05904badc198c8dc9610e0b83a8896"
+  },
+  {
+    "file": "latest-fixed-kda.exit.json",
+    "sha256": "0971c071ba448dd579dc08e3bb987e5db27451fffcf7d9c9abeac2507b5beaa6"
+  },
+  {
+    "file": "latest-fixed-kda.log",
+    "sha256": "8553edb21870493c1163fae0c6f8fd03ca5d57d64c170bdef52b5a2da9641e16"
+  },
+  {
+    "file": "latest-fixed-kda.nodes.json",
+    "sha256": "42f10e295a1c2fa2d770a6f6236827e6c51ac5955937c4c3782f254b099b3292"
+  },
+  {
+    "file": "latest-fixed-kda.solver-configs.json",
+    "sha256": "6a6d26b73be57246b89a055e43895eec12331c9df4eea8f0729241a66a3d9df0"
+  },
+  {
+    "file": "latest-fixed-kda.xml",
+    "sha256": "c58bb69e96c5b0d2d557a1498c63a9fcc1bd0d449050d42ae97571f3265a3084"
+  },
+  {
+    "file": "run_latest_controls.py",
+    "sha256": "58fd60af53041d9e2c9da2048d1d18fe7aee74a66d2b4905721b498ac3208e6f"
+  }
+]

@@ -1,0 +1,415 @@
+
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B1-T63-H1-HV1-D64-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  2%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B2-T500-H4-HV4-D60-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  4%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B2-T1000-H2-HV8-D128-gln0.1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  7%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B3-T1024-H2-HV2-D128-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [  9%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B4-T1024-H3-HV3-D128-gln10-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000001 ratio: 0.000000
+PASSED                                                                   [ 12%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B4-T2048-H4-HV4-D64-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 14%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B2-T1024-H4-HV4-D128-gln0.1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000040 ratio: 0.000353
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000164 ratio: 0.000195
+PASSED                                                                   [ 17%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent[B2-T1024-H4-HV8-D128-gln10-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000130 ratio: 0.000351
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000342 ratio: 0.000212
+PASSED                                                                   [ 19%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B2-T75-H4-D64-scale1-gln0.01-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001238 ratio: 0.000512
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000211 ratio: 0.000425
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000732 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000530
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000271 ratio: 0.000596
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.010414 ratio: 0.000483
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000001 ratio: 16.987643
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000798 ratio: 0.000366
+PASSED                                                                   [ 21%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B2-T500-H3-D60-scale1-gln1-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001326 ratio: 0.000461
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000193 ratio: 0.000376
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001465 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000649
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000244 ratio: 0.000878
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000123 ratio: 0.000744
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.012213 ratio: 0.000664
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.009992 ratio: 0.001509
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000339 ratio: 0.000708
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.001911 ratio: 0.001324
+PASSED                                                                   [ 24%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B2-T1000-H3-D64-scale0.1-gln1-mask_p0.5-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000165 ratio: 0.000512
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000224 ratio: 0.000452
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000082 ratio: 0.001014
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000130 ratio: 0.000865
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.003938 ratio: 0.000910
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.005190 ratio: 0.001579
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000074 ratio: 0.000831
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000472 ratio: 0.000642
+PASSED                                                                   [ 26%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B3-T1024-H4-D100-scale1-gln0.1-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001333 ratio: 0.000527
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000171 ratio: 0.000401
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000732 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.003906 ratio: 0.000532
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000371 ratio: 0.000556
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000007 ratio: 0.000560
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.016754 ratio: 0.000430
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000409 ratio: 0.001403
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000019 ratio: 0.000662
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.002359 ratio: 0.001591
+PASSED                                                                   [ 29%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000130 ratio: 0.000422
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000139 ratio: 0.000353
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.002930 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000103 ratio: 0.000683
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000065 ratio: 0.000627
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.006373 ratio: 0.000550
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.004510 ratio: 0.001192
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000023 ratio: 0.000537
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000313 ratio: 0.000460
+PASSED                                                                   [ 31%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normTrue-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000116 ratio: 0.000375
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000181 ratio: 0.000395
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000130 ratio: 0.000639
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000062 ratio: 0.000530
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.009109 ratio: 0.000515
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.004206 ratio: 0.001094
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000031 ratio: 0.000666
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000222 ratio: 0.000367
+PASSED                                                                   [ 34%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B2-T1500-H4-D128-scale0.1-gln10-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000174 ratio: 0.000590
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000231 ratio: 0.000596
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000076 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000101 ratio: 0.001409
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000530 ratio: 0.001449
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.009360 ratio: 0.001756
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.011514 ratio: 0.002625
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000146 ratio: 0.001080
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.003613 ratio: 0.001975
+PASSED                                                                   [ 36%]
+tests/ops/test_precond_gated_delta.py::test_chunk[B4-T2048-H8-D64-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000146 ratio: 0.000462
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000223 ratio: 0.000375
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000171 ratio: 0.000840
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000051 ratio: 0.000705
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.006555 ratio: 0.000635
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.006208 ratio: 0.001327
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000041 ratio: 0.000603
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000944 ratio: 0.001043
+PASSED                                                                   [ 39%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen[H4-D60-mask0-seqs1] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000038 ratio: 0.000444
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000269 ratio: 0.000372
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.015625 ratio: 0.000457
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000099 ratio: 0.000184
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.015625 ratio: 0.000394
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.006914 ratio: 0.000222
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000030 ratio: 0.000228
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000256 ratio: 0.000184
+PASSED                                                                   [ 41%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen[H4-D64-mask0-seqs3] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000046 ratio: 0.000522
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000334 ratio: 0.000396
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.015625 ratio: 0.000437
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000233 ratio: 0.000230
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.015625 ratio: 0.000366
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.006579 ratio: 0.000194
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000035 ratio: 0.000227
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000731 ratio: 0.000243
+PASSED                                                                   [ 43%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen[H4-D64-mask0.5-seqs3] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000067 ratio: 0.000548
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000412 ratio: 0.000421
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.031250 ratio: 0.000500
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000793 ratio: 0.000294
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.031250 ratio: 0.000445
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.024487 ratio: 0.000224
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000052 ratio: 0.000249
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.001297 ratio: 0.000274
+PASSED                                                                   [ 46%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen[H4-D100-mask0-seqs5] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000037 ratio: 0.000540
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000346 ratio: 0.000418
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.031250 ratio: 0.000437
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000488 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000312 ratio: 0.000331
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.031250 ratio: 0.000371
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.011824 ratio: 0.000261
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000022 ratio: 0.000213
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.001242 ratio: 0.000275
+PASSED                                                                   [ 48%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_0] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000171 ratio: 0.000532
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000488 ratio: 0.000401
+PASSED                                                                   [ 51%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_1] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000153 ratio: 0.000418
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000682 ratio: 0.000420
+PASSED                                                                   [ 53%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_prefill[H4-D64-mask0-seqs3-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000153 ratio: 0.000512
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000580 ratio: 0.000405
+PASSED                                                                   [ 56%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_prefill[H4-D64-mask0.5-seqs3-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000182 ratio: 0.000532
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000673 ratio: 0.000426
+PASSED                                                                   [ 58%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_prefill[H4-D100-mask0-seqs5-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000140 ratio: 0.000503
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000772 ratio: 0.000417
+PASSED                                                                   [ 60%]
+tests/ops/test_precond_gated_delta.py::test_chunk_transpose_state[B1-T63-H1-D64-scale1-gln1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 63%]
+tests/ops/test_precond_gated_delta.py::test_chunk_transpose_state[B2-T500-H3-D60-scale1-gln1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 65%]
+tests/ops/test_precond_gated_delta.py::test_chunk_transpose_state[B3-T1024-H4-D128-scale0.1-gln1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000061 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 68%]
+tests/ops/test_precond_gated_delta.py::test_chunk_transpose_state[B4-T2048-H8-D64-scale0.1-gln1-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.000001 ratio: 0.000001
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 70%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent_transpose_state[B1-T63-H1-D64-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 73%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent_transpose_state[B2-T500-H4-D60-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 75%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent_transpose_state[B2-T1000-H2-D128-gln0.1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 78%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent_transpose_state[B3-T1024-H2-D128-gln1-torch.float32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 80%]
+tests/ops/test_precond_gated_delta.py::test_chunk_gva[B2-T500-H2-HV4-D64-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000154 ratio: 0.000462
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000196 ratio: 0.000356
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000085 ratio: 0.000906
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000055 ratio: 0.000848
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.004387 ratio: 0.000691
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002308 ratio: 0.001156
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000040 ratio: 0.000760
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000352 ratio: 0.008436
+PASSED                                                                   [ 82%]
+tests/ops/test_precond_gated_delta.py::test_chunk_gva[B2-T1024-H2-HV8-D128-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000118 ratio: 0.000417
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000144 ratio: 0.000356
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.005859 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000132 ratio: 0.000717
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000075 ratio: 0.000609
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.007574 ratio: 0.000560
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.004947 ratio: 0.001163
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000023 ratio: 0.000542
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000443 ratio: 0.000699
+PASSED                                                                   [ 85%]
+tests/ops/test_precond_gated_delta.py::test_chunk_gva[B3-T1000-H4-HV8-D100-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000145 ratio: 0.000434
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000168 ratio: 0.000357
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000114 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.002930 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000117 ratio: 0.000770
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000078 ratio: 0.000693
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.007901 ratio: 0.000583
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.004063 ratio: 0.001247
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000037 ratio: 0.000564
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000666 ratio: 0.000743
+PASSED                                                                   [ 87%]
+tests/ops/test_precond_gated_delta.py::test_chunk_A_state[B2-T500-H3-D64-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000155 ratio: 0.000461
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000214 ratio: 0.000409
+INFO     fla.utils.testing:testing.py:32               at diff: 0.000042 ratio: 0.000452
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000122 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000229 ratio: 0.000755
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000131 ratio: 0.000611
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000029 ratio: 0.000526
+INFO     fla.utils.testing:testing.py:32          dh0_atk diff: 0.000019 ratio: 0.000738
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000382 ratio: 0.001911
+PASSED                                                                   [ 90%]
+tests/ops/test_precond_gated_delta.py::test_chunk_A_state[B2-T1024-H4-D128-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000119 ratio: 0.000417
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000119 ratio: 0.000334
+INFO     fla.utils.testing:testing.py:32               at diff: 0.000011 ratio: 0.000225
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000067 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000181 ratio: 0.000647
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000072 ratio: 0.000683
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000016 ratio: 0.000487
+INFO     fla.utils.testing:testing.py:32          dh0_atk diff: 0.000005 ratio: 0.000784
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000372 ratio: 0.001176
+PASSED                                                                   [ 92%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_empty_A_state[initial_A_state] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000100 ratio: 0.000384
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000203 ratio: 0.000046
+INFO     fla.utils.testing:testing.py:32               at diff: 0.000240 ratio: 0.000198
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000977 ratio: 0.000658
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000425
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000216 ratio: 0.000302
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.002938 ratio: 0.000442
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000200 ratio: 0.001075
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.001995 ratio: 0.000546
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000163 ratio: 0.000020
+INFO     fla.utils.testing:testing.py:32          dh0_atk diff: 0.000473 ratio: 0.000175
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000147 ratio: 0.000418
+PASSED                                                                   [ 95%]
+tests/ops/test_precond_gated_delta.py::test_chunk_varlen_empty_A_state[no_initial_A_state] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000116 ratio: 0.000376
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000268 ratio: 0.000051
+INFO     fla.utils.testing:testing.py:32               at diff: 0.000060 ratio: 0.000368
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.001953 ratio: 0.000915
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000582
+INFO     fla.utils.testing:testing.py:32           dg_atk diff: 0.000054 ratio: 0.000502
+INFO     fla.utils.testing:testing.py:32               dg diff: 0.003015 ratio: 0.000413
+INFO     fla.utils.testing:testing.py:32        dbeta_atk diff: 0.000218 ratio: 0.001065
+INFO     fla.utils.testing:testing.py:32            dbeta diff: 0.000972 ratio: 0.000319
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000185 ratio: 0.000028
+INFO     fla.utils.testing:testing.py:32  d_log_atk_scale diff: 0.000039 ratio: 0.000328
+PASSED                                                                   [ 97%]
+tests/ops/test_precond_gated_delta.py::test_fused_recurrent_default_beta_gva PASSED [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/current-shared-07-test_precond_gated_delta.xml -
+======================== 41 passed in 404.79s (0:06:44) ========================

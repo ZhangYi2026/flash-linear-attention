@@ -1,0 +1,10 @@
+1:  7608606a ! 1:  e9fc25f2 [GDN] Add opt-in ReWY backward
+    @@ fla/ops/gated_delta_rule/backends/rewy.py (new)
+     
+      ## fla/ops/gated_delta_rule/chunk.py ##
+     @@ fla/ops/gated_delta_rule/chunk.py: def chunk_gated_delta_rule_fwd(
+    -     return g, o, A, final_state, initial_state, g_input
+    +     return g, o, A, final_state, initial_state, g_input, h if return_intermediate_states else None
+      
+      
+     +@dispatch

@@ -1,0 +1,14 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "capability": "SM120",
+  "memory_mib": 12227,
+  "driver": "595.97",
+  "platform": "WSL Ubuntu-24.04-HyRec",
+  "python": "3.12.3",
+  "torch": "2.9.1+cu128",
+  "triton": "3.5.1",
+  "transformers": "5.20.2",
+  "cuda_runtime": "12.8",
+  "authorization": "User renewed local GPU authorization for this FLA PR; idle device verified before sequential tests.",
+  "performance": "No new performance measurement; datacenter SM90+ evidence remains missing."
+}

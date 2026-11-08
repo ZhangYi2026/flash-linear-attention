@@ -1,0 +1,12 @@
+[
+  "tests/cp/test_gdn.py",
+  "tests/cp/test_gdp.py",
+  "tests/cp/test_intracard.py",
+  "tests/layers/test_gated_deltanet.py",
+  "tests/layers/test_mom_shared_no_grad.py",
+  "tests/models/test_modeling_gated_deltanet.py",
+  "tests/models/test_modeling_gated_deltaproduct.py",
+  "tests/models/test_modeling_mom.py",
+  "tests/ops/test_gdn_kernels.py",
+  "tests/ops/test_gdp.py"
+]

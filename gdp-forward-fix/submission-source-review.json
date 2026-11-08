@@ -1,0 +1,38 @@
+{
+  "baseline": "0a649e4c7201f0edcba734832773fe8ab371367a",
+  "tma_fix": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+  "previous_integration": "7d7b00ca4e638d1a77aea9976e945e6f122b6c2d",
+  "final_integration": "2d2eef814c0fe14346dfdf13ee5b82724ee8d090",
+  "files_changed_from_previous_integration": [
+    "fla/ops/utils/solve_tril.py"
+  ],
+  "non_tma_specialization_ast_equal": true,
+  "shared_caller_evidence": "current-shared: 212 passed, 2 skipped; identical non-TMA source specialization",
+  "fix-sm120-solve-tril-consistency": {
+    "sha": "44db92fd7c343544c58c505edf217dceb1931636",
+    "changed_files": [
+      "fla/ops/utils/solve_tril.py"
+    ],
+    "source_sha256": {
+      "fla/ops/utils/solve_tril.py": "fba06478219c4086b9b461e508aa35ebe8656cc74237baab78dafeb71906a77d"
+    }
+  },
+  "fix-sm120-oja-single-stage": {
+    "sha": "b6172a05f2405a73c96ec190ee41f4083faa31a8",
+    "changed_files": [
+      "fla/ops/gated_oja_rule/chunk_h.py"
+    ],
+    "source_sha256": {
+      "fla/ops/gated_oja_rule/chunk_h.py": "4b0d100ae7c281f43c2e3b534e43c5017af62fb2425de47683f8673ac19c2793"
+    }
+  },
+  "fix-solve-tril-tma-coordinates": {
+    "sha": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+    "changed_files": [
+      "fla/ops/utils/solve_tril.py"
+    ],
+    "source_sha256": {
+      "fla/ops/utils/solve_tril.py": "08e86d0621772274232174f55365ff109bdaef268fdf500132b88c7778f8cb13"
+    }
+  }
+}

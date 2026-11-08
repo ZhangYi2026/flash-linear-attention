@@ -1,0 +1,160 @@
+[
+  {
+    "name": "l2norm_fwd:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      256
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "l2norm_fwd:0",
+    "call": 1,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      256
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "l2norm_fwd:1",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "l2norm_fwd:1",
+    "call": 1,
+    "dense_shape": [
+      2,
+      1024,
+      4
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "chunk_scaled_dot_kkt_fwd:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      64
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "solve_tril:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      64
+    ],
+    "equal": false,
+    "max_abs": 4.76837158203125e-07,
+    "relative_rms": 5.1254471777895105e-09,
+    "mismatch_count": 2,
+    "first_flat_index": 203912
+  },
+  {
+    "name": "dn_recompute_w_u_fwd:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      256
+    ],
+    "equal": true,
+    "max_abs": 0.0,
+    "relative_rms": 0.0,
+    "mismatch_count": 0
+  },
+  {
+    "name": "dn_recompute_w_u_fwd:1",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      512
+    ],
+    "equal": false,
+    "max_abs": 0.000244140625,
+    "relative_rms": 1.2257038406460197e-06,
+    "mismatch_count": 2,
+    "first_flat_index": 1631380
+  },
+  {
+    "name": "chunk_gated_delta_product_fwd_h:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      16,
+      4,
+      256,
+      512
+    ],
+    "equal": false,
+    "max_abs": 0.0009765625,
+    "relative_rms": 8.722055099497084e-06,
+    "mismatch_count": 105,
+    "first_flat_index": 7115742
+  },
+  {
+    "name": "chunk_gated_delta_product_fwd_h:1",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      512
+    ],
+    "equal": false,
+    "max_abs": 0.0009765625,
+    "relative_rms": 8.890609024092555e-06,
+    "mismatch_count": 48,
+    "first_flat_index": 1631710
+  },
+  {
+    "name": "chunk_gated_delta_product_fwd_o:0",
+    "call": 0,
+    "dense_shape": [
+      2,
+      1024,
+      4,
+      512
+    ],
+    "equal": false,
+    "max_abs": 0.0001220703125,
+    "relative_rms": 2.0959254470653832e-05,
+    "mismatch_count": 66,
+    "first_flat_index": 1705438
+  }
+]

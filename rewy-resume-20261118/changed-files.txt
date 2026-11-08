@@ -1,0 +1,6 @@
+ENVs.md
+fla/ops/gated_delta_rule/README.md
+fla/ops/gated_delta_rule/__init__.py
+fla/ops/gated_delta_rule/backends/rewy.py
+fla/ops/gated_delta_rule/chunk.py
+tests/ops/test_gdn.py

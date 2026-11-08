@@ -1,0 +1,6 @@
+{
+  "allocated_bytes.all.peak": 7702707200,
+  "reserved_bytes.all.peak": 8690597888,
+  "num_alloc_retries": 0,
+  "num_ooms": 0
+}

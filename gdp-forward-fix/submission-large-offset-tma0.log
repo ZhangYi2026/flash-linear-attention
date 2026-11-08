@@ -1,0 +1,28 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "shape": [
+    129,
+    4096,
+    64,
+    64
+  ],
+  "dtype": "bfloat16",
+  "first_checked_element_offset": 2147483712,
+  "last_checked_element_offset": 2164260800,
+  "input_output_bytes": 8657043456,
+  "rows": [
+    {
+      "layout": "dense",
+      "both_late_blocks_equal_to_small_solve": true,
+      "three_identity_controls_equal": true
+    },
+    {
+      "layout": "packed",
+      "both_late_blocks_equal_to_small_solve": true,
+      "three_identity_controls_equal": true
+    }
+  ],
+  "scope": "complete public solves; compare two late nonzero blocks and three identity controls, original full huge-batch test remains unrun",
+  "tma_enabled": false,
+  "repo": "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-integration-20261113"
+}

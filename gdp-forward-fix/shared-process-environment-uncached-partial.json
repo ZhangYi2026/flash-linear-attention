@@ -1,0 +1,16 @@
+{
+  "process": 653,
+  "cwd": "/home/zhang_e/.cache/fla-rewy-pr-20261108/solver-fix",
+  "flags": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "FLA_CI_ENV": "0",
+    "FLA_REWY": "0",
+    "FLA_FLASH_QLA": "0",
+    "FLA_TILELANG": "0",
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": "0",
+    "TRITON_F32_DEFAULT": "ieee",
+    "FLA_TRIL_PRECISION": null,
+    "FLA_CACHE_RESULTS": "0",
+    "FLA_USE_TMA": null
+  }
+}

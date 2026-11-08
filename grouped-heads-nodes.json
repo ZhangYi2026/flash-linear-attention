@@ -1,0 +1,10 @@
+[
+  "tests/ops/test_gdn.py::test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16]",
+  "tests/ops/test_gdn.py::test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16]"
+]

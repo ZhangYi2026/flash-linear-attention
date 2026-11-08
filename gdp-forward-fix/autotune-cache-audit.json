@@ -1,0 +1,10 @@
+{
+  "triton": "3.5.1",
+  "file": "triton/runtime/autotuner.py",
+  "sha256": "f45871b25f890190dee22e609c39ce966715917e07e07626d8e2addc19911c07",
+  "cache_key_lines": [
+    181,
+    188
+  ],
+  "finding": "check_disk_cache includes the string representation of every pruned candidate config in its SHA256 key; [2] and [2,4,8] warp candidate sets do not share autotune-result entries. This does not clear or disable the cache."
+}

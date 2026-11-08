@@ -1,0 +1,93 @@
+
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-dense] PASSED [  8%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.006866
+FAILED                                                                   [ 16%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-dense] PASSED [ 25%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.006866
+FAILED                                                                   [ 33%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense] SKIPPED [ 41%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen] SKIPPED [ 50%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-dense] PASSED [ 58%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.066406 ratio: 0.003204
+FAILED                                                                   [ 66%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-dense] PASSED [ 75%]
+tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.003738
+FAILED                                                                   [ 83%]
+tests/models/test_modeling_gated_deltaproduct.py::test_generation[L1-B3-T2000-use_forget_gateFalse-num_householders2] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           logits diff: 0.004150 ratio: 0.000936
+PASSED                                                                   [ 91%]
+tests/models/test_modeling_gated_deltaproduct.py::test_generation[L2-B4-T4000-use_forget_gateTrue-num_householders3] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32           logits diff: 0.008789 ratio: 0.001567
+PASSED                                                                   [100%]
+
+=================================== FAILURES ===================================
+____ test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen] _____
+tests/models/test_modeling_gated_deltaproduct.py:43: in test_modeling
+    check_forward(
+tests/models/utils.py:126: in check_forward
+    assert_close("output", output_fixed.view(1, B * T, -1), output_var, 1e-3)
+/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/audit_collection.py:45: in observe
+    return original(prefix,ref,tri,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/testing.py:41: in assert_close
+    assert error_rate < ratio, msg
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError:           output diff: 0.078125 ratio: 0.006866
+------------------------------ Captured log call -------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.006866
+____ test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen] ____
+tests/models/test_modeling_gated_deltaproduct.py:43: in test_modeling
+    check_forward(
+tests/models/utils.py:126: in check_forward
+    assert_close("output", output_fixed.view(1, B * T, -1), output_var, 1e-3)
+/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/audit_collection.py:45: in observe
+    return original(prefix,ref,tri,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/testing.py:41: in assert_close
+    assert error_rate < ratio, msg
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError:           output diff: 0.078125 ratio: 0.006866
+------------------------------ Captured log call -------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.006866
+_____ test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen] ______
+tests/models/test_modeling_gated_deltaproduct.py:43: in test_modeling
+    check_forward(
+tests/models/utils.py:126: in check_forward
+    assert_close("output", output_fixed.view(1, B * T, -1), output_var, 1e-3)
+/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/audit_collection.py:45: in observe
+    return original(prefix,ref,tri,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/testing.py:41: in assert_close
+    assert error_rate < ratio, msg
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError:           output diff: 0.066406 ratio: 0.003204
+------------------------------ Captured log call -------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.066406 ratio: 0.003204
+_____ test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen] ______
+tests/models/test_modeling_gated_deltaproduct.py:43: in test_modeling
+    check_forward(
+tests/models/utils.py:126: in check_forward
+    assert_close("output", output_fixed.view(1, B * T, -1), output_var, 1e-3)
+/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/audit_collection.py:45: in observe
+    return original(prefix,ref,tri,*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/testing.py:41: in assert_close
+    assert error_rate < ratio, msg
+           ^^^^^^^^^^^^^^^^^^
+E   AssertionError:           output diff: 0.078125 ratio: 0.003738
+------------------------------ Captured log call -------------------------------
+INFO     fla.utils.testing:testing.py:32           output diff: 0.078125 ratio: 0.003738
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/latest-baseline-gdp.xml -
+=========================== short test summary info ============================
+SKIPPED [2] tests/models/utils.py:105: D=128 is only tested on Hopper GPUs to save CI time.
+============== 4 failed, 6 passed, 2 skipped in 67.54s (0:01:07) ===============

@@ -1,0 +1,22 @@
+{
+  "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]": {
+    "bitwise_equal": true,
+    "max_abs_fp32": 0.0,
+    "threshold": 0.001
+  },
+  "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]": {
+    "bitwise_equal": true,
+    "max_abs_fp32": 0.0,
+    "threshold": 0.001
+  },
+  "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]": {
+    "bitwise_equal": true,
+    "max_abs_fp32": 0.0,
+    "threshold": 0.001
+  },
+  "tests/models/test_modeling_gated_deltaproduct.py::test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]": {
+    "bitwise_equal": true,
+    "max_abs_fp32": 0.0,
+    "threshold": 0.001
+  }
+}

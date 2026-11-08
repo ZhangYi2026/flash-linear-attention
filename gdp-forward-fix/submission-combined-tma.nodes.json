@@ -1,0 +1,12 @@
+[
+  "tests/ops/test_solve_tril.py::test_solve_tril[B1-T63-H1-chunk_size16]",
+  "tests/ops/test_solve_tril.py::test_solve_tril[B2-T500-H4-chunk_size32]",
+  "tests/ops/test_solve_tril.py::test_solve_tril[B2-T1000-H5-chunk_size64]",
+  "tests/ops/test_solve_tril.py::test_solve_tril[B3-T1024-H6-chunk_size64]",
+  "tests/ops/test_solve_tril.py::test_solve_tril[B4-T2048-H8-chunk_size64]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size16-cu_seqlens[0, 15]]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size32-cu_seqlens[0, 256, 500, 1000]]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D64-chunk_size16-cu_seqlens[0, 1, 100, 300, 1200, 2048]]",
+  "tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D128-chunk_size32-cu_seqlens[0, 200, 512, 1200, 2048]]"
+]

@@ -1,0 +1,452 @@
+{
+  "gpu": "GPU-3bffd5d2-3e59-3525-6211-22749909c412",
+  "command_exit_code": 0,
+  "other_process_observed": false,
+  "audit_errors": false,
+  "samples": [
+    {
+      "elapsed_seconds": 0.056,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 2.115,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 4.172,
+      "processes": []
+    },
+    {
+      "elapsed_seconds": 6.231,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 8.327,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 10.397,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 12.46,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 14.522,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 16.599,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 18.657,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 20.716,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 22.776,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 24.84,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 26.897,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 28.975,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 31.059,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 33.154,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 35.246,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 37.347,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 39.405,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 41.483,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 43.559,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 45.64,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 47.72,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 49.79,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 51.881,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 53.96,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 56.029,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 58.1,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 60.158,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 62.217,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 64.283,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 66.348,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 68.424,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 70.483,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 72.541,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 74.599,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 76.658,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 78.717,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 80.774,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 82.835,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 84.894,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 86.971,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 89.039,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 91.129,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 93.194,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 95.253,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 97.331,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 99.408,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 101.483,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 103.561,
+      "processes": [
+        {
+          "pid": 2661608,
+          "is_this_benchmark": true
+        }
+      ]
+    }
+  ]
+}

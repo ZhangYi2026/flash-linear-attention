@@ -1,0 +1,153 @@
+{
+  "baseline": "0a649e4c7201f0edcba734832773fe8ab371367a",
+  "candidate": "28e74f8ba0c8ebb0a0edd11c42dc7ef628b27cae",
+  "boundary": "public solve_tril forward, TMA disabled, includes output zero-initialization; CUDA Graph, no Python dispatch or backward",
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "process_order": [
+    "TMA-A1",
+    "TMA-B1",
+    "TMA-B2",
+    "TMA-A2"
+  ],
+  "gm_baseline_over_candidate": 1.0300434028427694,
+  "worst_latency_change_pct": -0.3072220682961646,
+  "max_process_spread_pct": 4.0623908481217255,
+  "rows": [
+    {
+      "shape": [
+        2,
+        1024,
+        4,
+        64
+      ],
+      "layout": "dense",
+      "output_dtype": "torch.float32",
+      "input_sha256": "527a94a86301b4527bb0befb0762b2d610c8aad054e03bcd731766c8c9d8d817",
+      "baseline_median_us": 20.36106207032867,
+      "baseline_process_spread_pct": 3.3933455782389905,
+      "candidate_median_us": 20.030881411648103,
+      "candidate_process_spread_pct": 0.39260353541116294,
+      "baseline_over_candidate": 1.0164835811213262,
+      "latency_change_pct": -1.6216278774658033
+    },
+    {
+      "shape": [
+        2,
+        1024,
+        4,
+        64
+      ],
+      "layout": "dense",
+      "output_dtype": "torch.bfloat16",
+      "input_sha256": "527a94a86301b4527bb0befb0762b2d610c8aad054e03bcd731766c8c9d8d817",
+      "baseline_median_us": 19.163618771180403,
+      "baseline_process_spread_pct": 1.235219108882669,
+      "candidate_median_us": 19.10474390523119,
+      "candidate_process_spread_pct": 2.98853427300006,
+      "baseline_over_candidate": 1.0030816883095246,
+      "latency_change_pct": -0.3072220682961646
+    },
+    {
+      "shape": [
+        2,
+        1024,
+        4,
+        64
+      ],
+      "layout": "packed",
+      "output_dtype": "torch.float32",
+      "input_sha256": "527a94a86301b4527bb0befb0762b2d610c8aad054e03bcd731766c8c9d8d817",
+      "baseline_median_us": 21.178940983760416,
+      "baseline_process_spread_pct": 0.9242110241387981,
+      "candidate_median_us": 20.560476794574406,
+      "candidate_process_spread_pct": 0.954604788331493,
+      "baseline_over_candidate": 1.0300802454809421,
+      "latency_change_pct": -2.9201846761848893
+    },
+    {
+      "shape": [
+        2,
+        1024,
+        4,
+        64
+      ],
+      "layout": "packed",
+      "output_dtype": "torch.bfloat16",
+      "input_sha256": "527a94a86301b4527bb0befb0762b2d610c8aad054e03bcd731766c8c9d8d817",
+      "baseline_median_us": 20.613345013797332,
+      "baseline_process_spread_pct": 2.7839141966154406,
+      "candidate_median_us": 20.21828651689662,
+      "candidate_process_spread_pct": 0.7217721043930275,
+      "baseline_over_candidate": 1.0195396626005155,
+      "latency_change_pct": -1.916518142185486
+    },
+    {
+      "shape": [
+        1,
+        4096,
+        8,
+        64
+      ],
+      "layout": "dense",
+      "output_dtype": "torch.float32",
+      "input_sha256": "a6ca933097f9ef6ffe8c8c05fd299930c6f0344b92e1bfe299ee385e7b957c98",
+      "baseline_median_us": 65.37297624021895,
+      "baseline_process_spread_pct": 3.7394439746516834,
+      "candidate_median_us": 63.39657636809276,
+      "candidate_process_spread_pct": 1.0014705454509343,
+      "baseline_over_candidate": 1.0311751830359235,
+      "latency_change_pct": -3.0232673893624384
+    },
+    {
+      "shape": [
+        1,
+        4096,
+        8,
+        64
+      ],
+      "layout": "dense",
+      "output_dtype": "torch.bfloat16",
+      "input_sha256": "a6ca933097f9ef6ffe8c8c05fd299930c6f0344b92e1bfe299ee385e7b957c98",
+      "baseline_median_us": 61.78647370452818,
+      "baseline_process_spread_pct": 2.4832171873440094,
+      "candidate_median_us": 58.685811400789575,
+      "candidate_process_spread_pct": 2.4613442177537554,
+      "baseline_over_candidate": 1.052834956691029,
+      "latency_change_pct": -5.018351295732493
+    },
+    {
+      "shape": [
+        1,
+        4096,
+        8,
+        64
+      ],
+      "layout": "packed",
+      "output_dtype": "torch.float32",
+      "input_sha256": "a6ca933097f9ef6ffe8c8c05fd299930c6f0344b92e1bfe299ee385e7b957c98",
+      "baseline_median_us": 67.28184166280855,
+      "baseline_process_spread_pct": 2.238548230005806,
+      "candidate_median_us": 64.54198695855936,
+      "candidate_process_spread_pct": 2.288461699596471,
+      "baseline_over_candidate": 1.0424507337527178,
+      "latency_change_pct": -4.072205273423279
+    },
+    {
+      "shape": [
+        1,
+        4096,
+        8,
+        64
+      ],
+      "layout": "packed",
+      "output_dtype": "torch.bfloat16",
+      "input_sha256": "a6ca933097f9ef6ffe8c8c05fd299930c6f0344b92e1bfe299ee385e7b957c98",
+      "baseline_median_us": 64.14671664429346,
+      "baseline_process_spread_pct": 4.050543250221619,
+      "candidate_median_us": 61.346582616152354,
+      "candidate_process_spread_pct": 4.0623908481217255,
+      "baseline_over_candidate": 1.0456444989880145,
+      "latency_change_pct": -4.365202421299941
+    }
+  ]
+}

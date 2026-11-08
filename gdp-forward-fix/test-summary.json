@@ -1,0 +1,2836 @@
+{
+  "submission-tma-default": {
+    "total": 10,
+    "passed": 10,
+    "failed": [],
+    "skipped": []
+  },
+  "submission-tma-enabled": {
+    "total": 10,
+    "passed": 10,
+    "failed": [],
+    "skipped": []
+  },
+  "submission-combined-tma": {
+    "total": 10,
+    "passed": 10,
+    "failed": [],
+    "skipped": []
+  },
+  "submission-integration": {
+    "total": 285,
+    "passed": 235,
+    "failed": [],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T4096-H16-HV16-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H4-HV16-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H4-D128-cu[0, 256, 500, 1000]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H8-D128-cu[0, 100, 300, 1200, 2000]]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H16-D128-cu[0, 101, 303, 1205, 3007, 4096]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B1-T1024-H4-D128]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B2-T2048-H8-D128]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_bwd_tilelang_backend",
+          "time": "0.001"
+        },
+        "reason": "TileLang is unavailable"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-sequence-cut]",
+          "time": "0.003"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-boundary-aligned]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp8-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 8 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-short-sequences]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-v-first]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-v-first]",
+          "time": "0.001"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n2]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n3]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-dense]",
+          "time": "0.001"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_generation[L2-B4-T2000-H8-D64-torch.float16]",
+          "time": "0.019"
+        },
+        "reason": "Known bugs in mom"
+      }
+    ]
+  },
+  "baseline-tma-20261113": {
+    "total": 2,
+    "passed": 0,
+    "failed": [
+      {
+        "classname": "tests.ops.test_solve_tril",
+        "name": "test_solve_tril[B2-T1000-H5-chunk_size64]",
+        "time": "1.347"
+      },
+      {
+        "classname": "tests.ops.test_solve_tril",
+        "name": "test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]]",
+        "time": "0.193"
+      }
+    ],
+    "skipped": []
+  },
+  "fixed-warps-models": {
+    "total": 12,
+    "passed": 10,
+    "failed": [],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      }
+    ]
+  },
+  "solver-fix-rewy": {
+    "total": 283,
+    "passed": 232,
+    "failed": [
+      {
+        "classname": "tests.cp.test_intracard",
+        "name": "test_chunk_kda_cache",
+        "time": "44.914"
+      }
+    ],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.002"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T4096-H16-HV16-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H4-HV16-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H4-D128-cu[0, 256, 500, 1000]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H8-D128-cu[0, 100, 300, 1200, 2000]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H16-D128-cu[0, 101, 303, 1205, 3007, 4096]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B1-T1024-H4-D128]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B2-T2048-H8-D128]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_bwd_tilelang_backend",
+          "time": "0.001"
+        },
+        "reason": "TileLang is unavailable"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-sequence-cut]",
+          "time": "0.003"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-boundary-aligned]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp8-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 8 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-short-sequences]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-v-first]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-v-first]",
+          "time": "0.001"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n2]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n3]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_generation[L2-B4-T2000-H8-D64-torch.float16]",
+          "time": "0.012"
+        },
+        "reason": "Known bugs in mom"
+      }
+    ]
+  },
+  "latest-integration-oja-20261113": {
+    "total": 285,
+    "passed": 235,
+    "failed": [],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T256-H2-HV4-D64-scale1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T512-H2-HV8-D64-scale1-gate_logit_normalizer0.1-mask_p0-use_qk_l2norm_in_kernelTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk[B2-T1024-H4-HV8-D128-scale0.1-gate_logit_normalizer1-mask_p0-use_qk_l2norm_in_kernelFalse-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_beta_sigmoid_in_kernel[B2-T1024-H4-HV8-D128-scale0.1-use_qk_l2norm_in_kernelFalse-allow_neg_eigvalTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (HV != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T256-Hq2-H4-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq1-H4-D64-scale0.1-has_dt_biasFalse-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T512-Hq2-H8-D64-scale1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_gate_in_kernel_gqa[B2-T1024-Hq4-H8-D128-scale0.1-has_dt_biasTrue-torch.float16]",
+          "time": "0.001"
+        },
+        "reason": "GQA (Hq != H) is not supported by the tilelang backend; covered by the Triton baseline run."
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.001"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T4096-H16-HV16-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H8-HV8-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk[B2-T2048-H4-HV16-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H4-D128-cu[0, 256, 500, 1000]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H8-D128-cu[0, 100, 300, 1200, 2000]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_varlen[H16-D128-cu[0, 101, 303, 1205, 3007, 4096]]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B1-T1024-H4-D128]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_state_v_first[B2-T2048-H8-D128]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backward requires an SM90/SM100 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B2-T2048-H8-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H4-HV4-D128-torch.float16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_flash_qla_chunk_forward_only[B1-T1024-H2-HV8-D128-torch.bfloat16]",
+          "time": "0.000"
+        },
+        "reason": "FlashQLA backend requires an SM90/SM100/SM120 GPU and the flash_qla package"
+      },
+      {
+        "node": {
+          "classname": "tests.ops.test_gdn",
+          "name": "test_chunk_bwd_tilelang_backend",
+          "time": "0.001"
+        },
+        "reason": "TileLang is unavailable"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-sequence-cut]",
+          "time": "0.003"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-boundary-aligned]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp8-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 8 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-short-sequences]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-sequence-cut]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-gva-single-sequence]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp2-v-first]",
+          "time": "0.002"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdn",
+          "name": "test_chunk[cp4-v-first]",
+          "time": "0.002"
+        },
+        "reason": "requires 4 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n2]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.cp.test_gdp",
+          "name": "test_chunk[n3]",
+          "time": "0.001"
+        },
+        "reason": "requires 2 devices"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-dense]",
+          "time": "0.001"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-dense]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]",
+          "time": "0.000"
+        },
+        "reason": "Bug not fixed yet"
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_mom",
+          "name": "test_generation[L2-B4-T2000-H8-D64-torch.float16]",
+          "time": "0.014"
+        },
+        "reason": "Known bugs in mom"
+      }
+    ]
+  },
+  "kda-fixture-fix-20261113": {
+    "total": 8,
+    "passed": 8,
+    "failed": [],
+    "skipped": []
+  },
+  "latest-baseline-gdp": {
+    "total": 12,
+    "passed": 6,
+    "failed": [
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]",
+        "time": "5.570"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]",
+        "time": "0.589"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]",
+        "time": "0.601"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]",
+        "time": "0.599"
+      }
+    ],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      }
+    ]
+  },
+  "latest-baseline-kda": {
+    "total": 1,
+    "passed": 0,
+    "failed": [
+      {
+        "classname": "tests.cp.test_intracard",
+        "name": "test_chunk_kda_cache",
+        "time": "0.850"
+      }
+    ],
+    "skipped": []
+  },
+  "latest-fixed-kda": {
+    "total": 8,
+    "passed": 8,
+    "failed": [],
+    "skipped": []
+  },
+  "oja-fix-test_oja": {
+    "total": 24,
+    "passed": 24,
+    "failed": [],
+    "skipped": []
+  },
+  "oja-fix-test_gated_oja_rule2": {
+    "total": 33,
+    "passed": 33,
+    "failed": [],
+    "skipped": []
+  },
+  "solver-fix-tma": {
+    "total": 2,
+    "passed": 0,
+    "failed": [
+      {
+        "classname": "tests.ops.test_solve_tril",
+        "name": "test_solve_tril[B2-T1000-H5-chunk_size64]",
+        "time": "0.839"
+      },
+      {
+        "classname": "tests.ops.test_solve_tril",
+        "name": "test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]]",
+        "time": "0.136"
+      }
+    ],
+    "skipped": []
+  },
+  "baseline-oja-fresh": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "solver-fix-oja-fresh": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "baseline-oja2-resource-20261113": {
+    "total": 1,
+    "passed": 0,
+    "failed": [
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "5.081"
+      }
+    ],
+    "skipped": []
+  },
+  "solver-fix-shared-failed-batch": {
+    "total": 325,
+    "passed": 86,
+    "failed": [
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T2048-H8-D128-scale1-gate_logit_normalizer10-torch.float32]",
+        "time": "54.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T2048-H8-D128-scale1-gate_logit_normalizer10-torch.float32]",
+        "time": "0.004"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T1024-H4-D64-scale0.1-gate_logit_normalizer10-torch.float32]",
+        "time": "0.003"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T1024-H4-D64-scale0.1-gate_logit_normalizer10-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B2-T1536-H4-D128-scale1-gate_logit_normalizer100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B2-T1536-H4-D128-scale1-gate_logit_normalizer100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T2048-H4-D256-scale1-gate_logit_normalizer100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_naive_chunk_oja[B4-T2048-H4-D256-scale1-gate_logit_normalizer100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B1-T63-H1-D64-scale1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B1-T63-H1-D64-scale1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B2-T500-H4-D60-scale1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B2-T500-H4-D60-scale1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B2-T1000-H8-D128-scale1-gate_logit_normalizer0.1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B2-T1000-H8-D128-scale1-gate_logit_normalizer0.1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B3-T1024-H4-D128-scale0.1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B3-T1024-H4-D128-scale0.1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B4-T1024-H8-D128-scale1-gate_logit_normalizer10-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B4-T1024-H8-D128-scale1-gate_logit_normalizer10-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B4-T2048-H8-D64-scale0.1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent[B4-T2048-H8-D64-scale0.1-gate_logit_normalizer1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B1-T63-H1-D64-scale1-gate_logit_normalizer0.01-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B1-T63-H1-D64-scale1-gate_logit_normalizer0.01-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B2-T500-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B2-T500-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B2-T1000-H3-D64-scale0.1-gate_logit_normalizer1-mask_p0.5-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B2-T1000-H3-D64-scale0.1-gate_logit_normalizer1-mask_p0.5-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B3-T1024-H4-D100-scale1-gate_logit_normalizer0.1-mask_p0-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B3-T1024-H4-D100-scale1-gate_logit_normalizer0.1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B4-T1024-H4-D128-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_forward[B4-T1024-H4-D128-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B4-T4096-H4-D128-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B4-T4096-H4-D128-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B1-T4096-H1-D64-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B1-T4096-H1-D64-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B2-T4096-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B2-T4096-H3-D60-scale1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B1-T65-H2-D64-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk[B1-T65-H2-D64-scale0.1-gate_logit_normalizer1-mask_p0-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk32]",
+        "time": "0.004"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk64]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-gate1.0-torch.float32-chunk64]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D60-mask_p0-cu_seqlens[0, 96, 177]-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D60-mask_p0-cu_seqlens[0, 96, 177]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H16-D128-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H16-D128-mask_p0-cu_seqlens[0, 256, 500, 1000]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D64-mask_p0.5-cu_seqlens[0, 256, 500, 1000]-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D64-mask_p0.5-cu_seqlens[0, 256, 500, 1000]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D100-mask_p0-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_varlen[H4-D100-mask_p0-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent_default_beta_gva",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_fused_recurrent_default_beta_gva",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_rejects_gva",
+        "time": "0.005"
+      },
+      {
+        "classname": "tests.ops.test_oja",
+        "name": "test_chunk_rejects_gva",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[empty-key]",
+        "time": "0.004"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[empty-key]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[empty-slot]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[empty-slot]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[large-slot]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_invalid_dimensions[large-slot]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B1-T63-H1-K64-M64-scale1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B1-T63-H1-K64-M64-scale1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B2-T500-H4-K60-M64-scale1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B2-T500-H4-K60-M64-scale1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B2-T1000-H4-K128-M128-scale0.1-torch.bfloat16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B2-T1000-H4-K128-M128-scale0.1-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B3-T1024-H2-K128-M64-scale0.1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent[B3-T1024-H2-K128-M64-scale0.1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_varlen[H4-K60-M64-cu_seqlens[0, 1, 96, 177]-torch.float16]",
+        "time": "0.005"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_varlen[H4-K60-M64-cu_seqlens[0, 1, 96, 177]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_varlen[H2-K128-M128-cu_seqlens[0, 256, 500, 1000]-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_varlen[H2-K128-M128-cu_seqlens[0, 256, 500, 1000]-torch.bfloat16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_backward_unsupported",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_fused_recurrent_backward_unsupported",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T63-H1-K64-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T63-H1-K64-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T500-H3-K60-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T500-H3-K60-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T1024-H2-K128-M256-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T1024-H2-K128-M256-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B4-T1024-H4-K128-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B4-T1024-H4-K128-M64-scale1-torch.float16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T65-H2-K256-M64-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T65-H2-K256-M64-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T65-H2-K60-M96-scale0.1-torch.float16-qnFalse-knFalse-h0False-htFalse]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T65-H2-K60-M96-scale0.1-torch.float16-qnFalse-knFalse-h0False-htFalse]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T17-H2-K64-M64-scaleNone-torch.float32-qnTrue-knFalse-h0False-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T17-H2-K64-M64-scaleNone-torch.float32-qnTrue-knFalse-h0False-htTrue]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T17-H2-K64-M64-scaleNone-torch.float32-qnFalse-knTrue-h0True-htFalse]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B1-T17-H2-K64-M64-scaleNone-torch.float32-qnFalse-knTrue-h0True-htFalse]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_strong_decay[40]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_strong_decay[40]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_strong_decay[100]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_strong_decay[100]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[64]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_with_chunk_size[64]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H4-K60-M64-cu_seqlens[0, 96, 177]-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H4-K60-M64-cu_seqlens[0, 96, 177]-torch.float16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H4-K128-M128-cu_seqlens[0, 256, 500, 1000]-torch.bfloat16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H4-K128-M128-cu_seqlens[0, 256, 500, 1000]-torch.bfloat16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H2-K64-M64-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_varlen[H2-K64-M64-cu_seqlens[0, 15, 100, 300, 1200, 2000]-torch.float16]",
+        "time": "0.000"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_matches_fused_recurrent[K64]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_matches_fused_recurrent[K64]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_matches_fused_recurrent[K512]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk_matches_fused_recurrent[K512]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[unnormalized-chunk]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[unnormalized-chunk]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[unnormalized-recurrent]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[unnormalized-recurrent]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[normalized-chunk]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[normalized-chunk]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[normalized-recurrent]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_normalization_alias[normalized-recurrent]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B1-T63-H1-HV1-D64-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B1-T63-H1-HV1-D64-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T500-H4-HV4-D60-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T500-H4-HV4-D60-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1000-H2-HV8-D128-gln0.1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1000-H2-HV8-D128-gln0.1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B3-T1024-H2-HV2-D128-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B3-T1024-H2-HV2-D128-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B4-T1024-H3-HV3-D128-gln10-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B4-T1024-H3-HV3-D128-gln10-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B4-T2048-H4-HV4-D64-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B4-T2048-H4-HV4-D64-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1024-H4-HV4-D128-gln0.1-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1024-H4-HV4-D128-gln0.1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1024-H4-HV8-D128-gln10-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent[B2-T1024-H4-HV8-D128-gln10-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T75-H4-D64-scale1-gln0.01-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T75-H4-D64-scale1-gln0.01-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T500-H3-D60-scale1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T500-H3-D60-scale1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T1000-H3-D64-scale0.1-gln1-mask_p0.5-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T1000-H3-D64-scale0.1-gln1-mask_p0.5-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B3-T1024-H4-D100-scale1-gln0.1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B3-T1024-H4-D100-scale1-gln0.1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T1024-H4-D128-scale0.1-gln1-mask_p0-qk_l2normTrue-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T1500-H4-D128-scale0.1-gln10-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B2-T1500-H4-D128-scale0.1-gln10-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T2048-H8-D64-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk[B4-T2048-H8-D64-scale0.1-gln1-mask_p0-qk_l2normFalse-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D60-mask0-seqs1]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D60-mask0-seqs1]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D64-mask0-seqs3]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D64-mask0-seqs3]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D64-mask0.5-seqs3]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D64-mask0.5-seqs3]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D100-mask0-seqs5]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen[H4-D100-mask0-seqs5]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_0]",
+        "time": "0.004"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_0]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_1]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D60-mask0-seqs1-torch.float16_1]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D64-mask0-seqs3-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D64-mask0-seqs3-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D64-mask0.5-seqs3-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D64-mask0.5-seqs3-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D100-mask0-seqs5-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_prefill[H4-D100-mask0-seqs5-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B1-T63-H1-D64-scale1-gln1-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B1-T63-H1-D64-scale1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B2-T500-H3-D60-scale1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B2-T500-H3-D60-scale1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B3-T1024-H4-D128-scale0.1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B3-T1024-H4-D128-scale0.1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B4-T2048-H8-D64-scale0.1-gln1-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_transpose_state[B4-T2048-H8-D64-scale0.1-gln1-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B1-T63-H1-D64-gln1-torch.float32]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B1-T63-H1-D64-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B2-T500-H4-D60-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B2-T500-H4-D60-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B2-T1000-H2-D128-gln0.1-torch.float32]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B2-T1000-H2-D128-gln0.1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B3-T1024-H2-D128-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_transpose_state[B3-T1024-H2-D128-gln1-torch.float32]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B2-T500-H2-HV4-D64-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B2-T500-H2-HV4-D64-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B2-T1024-H2-HV8-D128-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B2-T1024-H2-HV8-D128-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B3-T1000-H4-HV8-D100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_gva[B3-T1000-H4-HV8-D100-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_A_state[B2-T500-H3-D64-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_A_state[B2-T500-H3-D64-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_A_state[B2-T1024-H4-D128-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_A_state[B2-T1024-H4-D128-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_empty_A_state[initial_A_state]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_empty_A_state[initial_A_state]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_empty_A_state[no_initial_A_state]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_chunk_varlen_empty_A_state[no_initial_A_state]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_default_beta_gva",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_precond_gated_delta",
+        "name": "test_fused_recurrent_default_beta_gva",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B5-T512-H2-HQ8-D128-use_forget_gateTrue-torch.bfloat16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B5-T512-H2-HQ8-D128-use_forget_gateTrue-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B3-T1024-H2-HQ8-D64-use_forget_gateTrue-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B3-T1024-H2-HQ8-D64-use_forget_gateTrue-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B2-T2000-H1-HQ4-D64-use_forget_gateFalse-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B2-T2000-H1-HQ4-D64-use_forget_gateFalse-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B1-T4000-H1-HQ2-D128-use_forget_gateFalse-torch.bfloat16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel[B1-T4000-H1-HQ2-D128-use_forget_gateFalse-torch.bfloat16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D128-use_forget_gateFalse-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+        "time": "0.002"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D128-use_forget_gateFalse-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D128-use_forget_gateTrue-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D128-use_forget_gateTrue-cu_seqlens[0, 15, 333, 2048]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D64-use_forget_gateTrue-cu_seqlens[0, 841, 889, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D64-use_forget_gateTrue-cu_seqlens[0, 841, 889, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D64-use_forget_gateFalse-cu_seqlens[0, 841, 889, 2000, 3000, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ4-D64-use_forget_gateFalse-cu_seqlens[0, 841, 889, 2000, 3000, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ16-D128-use_forget_gateTrue-cu_seqlens[0, 500, 1023, 2000, 3000, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_varlen[H2-HQ16-D128-use_forget_gateTrue-cu_seqlens[0, 500, 1023, 2000, 3000, 4096]-torch.float16]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_backward_kernels_take_runtime_lengths[kernel0-T]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_backward_kernels_take_runtime_lengths[kernel1-T]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_backward_kernels_take_runtime_lengths[kernel2-NUM_BLOCKS]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_backward_kernels_take_runtime_lengths[kernel3-NUM_BLOCKS]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.ops.test_path_attn",
+        "name": "test_parallel_backward_kernels_take_runtime_lengths[kernel4-NUM_BLOCKS]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-dense]",
+        "time": "0.004"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2True-bsNone-torch.bfloat16-varlen]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-dense]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bsNone-torch.bfloat16-varlen]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-dense]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs1-torch.bfloat16-varlen]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-dense]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_modeling[L4-B4-T1024-H4-D64-l2False-bs4-torch.bfloat16-varlen]",
+        "time": "0.001"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_generation[L1-B3-T2000-use_forget_gateFalse-num_householders2]",
+        "time": "2.700"
+      },
+      {
+        "classname": "tests.models.test_modeling_gated_deltaproduct",
+        "name": "test_generation[L2-B4-T4000-use_forget_gateTrue-num_householders3]",
+        "time": "3.130"
+      }
+    ],
+    "skipped": [],
+    "completed_successfully": false
+  },
+  "a800-naive-oja-0": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "a800-naive-oja-1": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "a800-naive-oja-2": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "a800-naive-oja-3": {
+    "total": 1,
+    "passed": 1,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-00-test_solve_tril": {
+    "total": 10,
+    "passed": 10,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-01-test_delta": {
+    "total": 13,
+    "passed": 13,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-02-test_delta_product": {
+    "total": 12,
+    "passed": 12,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-03-test_gdp": {
+    "total": 16,
+    "passed": 16,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-04-test_comba": {
+    "total": 35,
+    "passed": 35,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-05-test_oja": {
+    "total": 24,
+    "passed": 24,
+    "failed": [],
+    "skipped": []
+  },
+  "recovery-06-test_gated_oja_rule2": {
+    "total": 13,
+    "passed": 12,
+    "failed": [
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "226.318"
+      }
+    ],
+    "skipped": []
+  },
+  "solver-fix-shared": {
+    "total": 127,
+    "passed": 126,
+    "failed": [
+      {
+        "classname": "tests.ops.test_gated_oja_rule2",
+        "name": "test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]",
+        "time": "226.318"
+      }
+    ],
+    "skipped": [],
+    "reports": [
+      "a800-naive-oja-0.xml",
+      "a800-naive-oja-1.xml",
+      "a800-naive-oja-2.xml",
+      "a800-naive-oja-3.xml",
+      "recovery-00-test_solve_tril.xml",
+      "recovery-01-test_delta.xml",
+      "recovery-02-test_delta_product.xml",
+      "recovery-03-test_gdp.xml",
+      "recovery-04-test_comba.xml",
+      "recovery-05-test_oja.xml",
+      "recovery-06-test_gated_oja_rule2.xml"
+    ],
+    "device_counts": {
+      "A800 SM80": 4,
+      "RTX 5070 Ti Laptop SM120": 143
+    },
+    "completed_successfully": false,
+    "collected": 147
+  },
+  "current-shared-00-test_solve_tril": {
+    "total": 10,
+    "passed": 10,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-01-test_delta": {
+    "total": 13,
+    "passed": 13,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-02-test_delta_product": {
+    "total": 12,
+    "passed": 12,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-03-test_gdp": {
+    "total": 16,
+    "passed": 16,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-04-test_comba": {
+    "total": 35,
+    "passed": 35,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-05-test_oja": {
+    "total": 24,
+    "passed": 24,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-06-test_gated_oja_rule2": {
+    "total": 33,
+    "passed": 33,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-07-test_precond_gated_delta": {
+    "total": 41,
+    "passed": 41,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-08-test_path_attn": {
+    "total": 14,
+    "passed": 14,
+    "failed": [],
+    "skipped": []
+  },
+  "current-shared-09-test_modeling_gated_deltaproduct": {
+    "total": 12,
+    "passed": 10,
+    "failed": [],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      }
+    ]
+  },
+  "current-shared": {
+    "total": 214,
+    "passed": 212,
+    "failed": [],
+    "skipped": [
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-dense]",
+          "time": "0.002"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      },
+      {
+        "node": {
+          "classname": "tests.models.test_modeling_gated_deltaproduct",
+          "name": "test_modeling[L4-B4-T1024-H4-D128-l2False-bsNone-torch.bfloat16-varlen]",
+          "time": "0.001"
+        },
+        "reason": "D=128 is only tested on Hopper GPUs to save CI time."
+      }
+    ],
+    "reports": [
+      "a800-naive-oja-0.xml",
+      "a800-naive-oja-1.xml",
+      "a800-naive-oja-2.xml",
+      "a800-naive-oja-3.xml",
+      "current-shared-00-test_solve_tril.xml",
+      "current-shared-01-test_delta.xml",
+      "current-shared-02-test_delta_product.xml",
+      "current-shared-03-test_gdp.xml",
+      "current-shared-04-test_comba.xml",
+      "current-shared-05-test_oja.xml",
+      "current-shared-06-test_gated_oja_rule2.xml",
+      "current-shared-07-test_precond_gated_delta.xml",
+      "current-shared-08-test_path_attn.xml",
+      "current-shared-09-test_modeling_gated_deltaproduct.xml"
+    ],
+    "device_counts": {
+      "A800 SM80": 4,
+      "RTX 5070 Ti Laptop SM120": 210
+    },
+    "completed_successfully": true,
+    "collected": 214
+  }
+}

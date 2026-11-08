@@ -1,0 +1,7 @@
+{
+  "commit": "e7e11699b40e337cabc11c8956e050eaae6809b9",
+  "files_verified": 810,
+  "changes_from_previous_integration": [
+    "tests/cp/test_intracard.py"
+  ]
+}

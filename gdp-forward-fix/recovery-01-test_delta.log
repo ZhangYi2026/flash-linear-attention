@@ -1,0 +1,134 @@
+
+tests/ops/test_delta.py::test_chunk[B1-T63-H1-D64-scale1-False] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000370
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001045 ratio: 0.000309
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000463
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000780
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.015625 ratio: 0.000545
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000594 ratio: 0.000215
+PASSED                                                                   [  7%]
+tests/ops/test_delta.py::test_chunk[B2-T100-H4-D60-scale0.1-False] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001481 ratio: 0.000404
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000925
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.015625 ratio: 0.000650
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000547 ratio: 0.000341
+PASSED                                                                   [ 15%]
+tests/ops/test_delta.py::test_chunk[B2-T1000-H3-D128-scale0.1-False] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001435 ratio: 0.000479
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.002930 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.015625 ratio: 0.000667
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000169 ratio: 0.000440
+PASSED                                                                   [ 23%]
+tests/ops/test_delta.py::test_chunk[B2-T1024-H4-D128-scale1-True] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000588
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001672 ratio: 0.000479
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.001953 ratio: 0.000818
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.007812 ratio: 0.000802
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.001953 ratio: 0.000668
+INFO     fla.utils.testing:testing.py:32               db diff: 0.062500 ratio: 0.000661
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.001003 ratio: 0.000297
+PASSED                                                                   [ 30%]
+tests/ops/test_delta.py::test_chunk[B3-T2000-H4-D128-scale0.1-False] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001442 ratio: 0.000477
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.031250 ratio: 0.000657
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000105 ratio: 0.000308
+PASSED                                                                   [ 38%]
+tests/ops/test_delta.py::test_chunk[B4-T2048-H8-D64-scale0.1-False] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.000244 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001712 ratio: 0.000511
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000366 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.003906 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000977 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.015625 ratio: 0.000663
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000107 ratio: 0.000347
+PASSED                                                                   [ 46%]
+tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@16 diff: 0.001953 ratio: 0.003613
+INFO     fla.utils.testing:testing.py:32            ht@16 diff: 0.011377 ratio: 0.003324
+INFO     fla.utils.testing:testing.py:32            dq@16 diff: 0.002930 ratio: 0.004381
+INFO     fla.utils.testing:testing.py:32            dk@16 diff: 0.023438 ratio: 0.006223
+INFO     fla.utils.testing:testing.py:32            dv@16 diff: 0.007812 ratio: 0.003759
+INFO     fla.utils.testing:testing.py:32            db@16 diff: 0.062500 ratio: 0.005584
+INFO     fla.utils.testing:testing.py:32           dh0@16 diff: 0.004499 ratio: 0.002847
+PASSED                                                                   [ 53%]
+tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk32] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@32 diff: 0.001953 ratio: 0.003658
+INFO     fla.utils.testing:testing.py:32            ht@32 diff: 0.011122 ratio: 0.003598
+INFO     fla.utils.testing:testing.py:32            dq@32 diff: 0.002930 ratio: 0.004403
+INFO     fla.utils.testing:testing.py:32            dk@32 diff: 0.023438 ratio: 0.006404
+INFO     fla.utils.testing:testing.py:32            dv@32 diff: 0.007812 ratio: 0.003906
+INFO     fla.utils.testing:testing.py:32            db@32 diff: 0.062500 ratio: 0.004858
+INFO     fla.utils.testing:testing.py:32           dh0@32 diff: 0.005691 ratio: 0.003240
+PASSED                                                                   [ 61%]
+tests/ops/test_delta.py::test_chunk_with_chunk_size[B1-T64-H2-D32-scale0.1-torch.bfloat16-chunk64] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32             o@64 diff: 0.001953 ratio: 0.003748
+INFO     fla.utils.testing:testing.py:32            ht@64 diff: 0.012811 ratio: 0.004064
+INFO     fla.utils.testing:testing.py:32            dq@64 diff: 0.002930 ratio: 0.004532
+INFO     fla.utils.testing:testing.py:32            dk@64 diff: 0.031250 ratio: 0.006949
+INFO     fla.utils.testing:testing.py:32            dv@64 diff: 0.007812 ratio: 0.003906
+INFO     fla.utils.testing:testing.py:32            db@64 diff: 0.062500 ratio: 0.005158
+INFO     fla.utils.testing:testing.py:32           dh0@64 diff: 0.009628 ratio: 0.004295
+PASSED                                                                   [ 69%]
+tests/ops/test_delta.py::test_chunk_varlen[H2-D64-cu_seqlens[0, 15]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000246
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.000767 ratio: 0.000151
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 76%]
+tests/ops/test_delta.py::test_chunk_varlen[H3-D60-cu_seqlens[0, 111, 500]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000545
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001287 ratio: 0.000452
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 84%]
+tests/ops/test_delta.py::test_chunk_varlen[H3-D64-cu_seqlens[0, 256, 500, 900, 1000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000447
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001420 ratio: 0.000459
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [ 92%]
+tests/ops/test_delta.py::test_chunk_varlen[H4-D100-cu_seqlens[0, 15, 100, 300, 1200, 1599, 1800, 2000]-torch.float16] 
+-------------------------------- live log call ---------------------------------
+INFO     fla.utils.testing:testing.py:32                o diff: 0.001953 ratio: 0.000442
+INFO     fla.utils.testing:testing.py:32               ht diff: 0.001579 ratio: 0.000354
+INFO     fla.utils.testing:testing.py:32               dq diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dk diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               dv diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32               db diff: 0.000000 ratio: 0.000000
+INFO     fla.utils.testing:testing.py:32              dh0 diff: 0.000000 ratio: 0.000000
+PASSED                                                                   [100%]
+
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/recovery-01-test_delta.xml -
+============================== 13 passed in 3.64s ==============================

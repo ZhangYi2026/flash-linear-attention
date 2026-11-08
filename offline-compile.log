@@ -1,0 +1,8 @@
+/workspace/fla_rewy_upstream_20261108/fla/utils/hardware.py:62: UserWarning: Triton is not supported on current platform, roll back to CPU.
+  _cpu_device_warning()
+{"arch": 80, "dtype": "bf16", "H": 2, "K": 128, "V": 128, "BT": 64, "BK": 32, "BV": 128, "scale": 0.08838834764831845, "IS_VARLEN": false, "STATE_V_FIRST": false, "shared_bytes": 61440}
+{"arch": 80, "dtype": "fp16", "H": 2, "K": 60, "V": 96, "BT": 32, "BK": 32, "BV": 128, "scale": 0.12909944487358058, "IS_VARLEN": false, "STATE_V_FIRST": false, "shared_bytes": 30720}
+{"arch": 80, "dtype": "bf16", "H": 2, "K": 64, "V": 128, "BT": 16, "BK": 32, "BV": 128, "scale": 0.125, "IS_VARLEN": true, "STATE_V_FIRST": true, "shared_bytes": 18432}
+{"arch": 90, "dtype": "bf16", "H": 2, "K": 128, "V": 128, "BT": 64, "BK": 32, "BV": 128, "scale": 0.08838834764831845, "IS_VARLEN": false, "STATE_V_FIRST": false, "shared_bytes": 69632}
+{"arch": 90, "dtype": "fp16", "H": 2, "K": 60, "V": 96, "BT": 32, "BK": 32, "BV": 128, "scale": 0.12909944487358058, "IS_VARLEN": false, "STATE_V_FIRST": false, "shared_bytes": 30720}
+{"arch": 90, "dtype": "bf16", "H": 2, "K": 64, "V": 128, "BT": 16, "BK": 32, "BV": 128, "scale": 0.125, "IS_VARLEN": true, "STATE_V_FIRST": true, "shared_bytes": 18432}

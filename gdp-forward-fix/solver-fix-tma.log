@@ -1,0 +1,148 @@
+TMA active; unchanged original nodes: ['tests/ops/test_solve_tril.py::test_solve_tril[B2-T1000-H5-chunk_size64]', 'tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]]']
+
+tests/ops/test_solve_tril.py::test_solve_tril[B2-T1000-H5-chunk_size64] FAILED [ 50%]
+tests/ops/test_solve_tril.py::test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]] FAILED [100%]
+
+=================================== FAILURES ===================================
+__________________ test_solve_tril[B2-T1000-H5-chunk_size64] ___________________
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/core.py:43: in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/core.py:1397: in load
+    return _semantic.descriptor_load(self, offsets, "", "")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1097: in descriptor_load
+    offsets = self._convert_to_ir_values(offsets, require_i64=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1851: in _convert_to_ir_values
+    return [self._convert_elem_to_ir_value(elem, require_i64) for elem in list_like]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1844: in _convert_elem_to_ir_value
+    assert False, "Block pointers only support 32 bit `offsets/block_shape`, " \
+           ^^^^^
+E   AssertionError: Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support
+
+The above exception was the direct cause of the following exception:
+tests/ops/test_solve_tril.py:48: in test_solve_tril
+    tri = solve_tril(A.reshape(B, H, -1, chunk_size)[:, :, :T, :].transpose(1, 2)).transpose(1, 2)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1044: in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+fla/backends.py:202: in wrapper
+    return default_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/decorators.py:152: in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/ops/utils/solve_tril.py:401: in solve_tril
+    merge_fn[NT, B * H](
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:419: in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:452: in run
+    return self.fn.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:250: in run
+    ret = self.fn.run(
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:733: in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:861: in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:300: in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:80: in make_ir
+    return ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+E   triton.compiler.errors.CompilationError: at 41:18:
+E           p_A_11 = A + o_t[:, None] * (H*BT) + o_i[None, :]
+E           p_A_22 = A + (o_t[:, None] + 16) * (H*BT) + (o_i[None, :] + 16)
+E           p_A_33 = A + (o_t[:, None] + 32) * (H*BT) + (o_i[None, :] + 32)
+E           p_A_44 = A + (o_t[:, None] + 48) * (H*BT) + (o_i[None, :] + 48)
+E           b_Ai_11 = tl.load(p_A_11, mask=(o_t[:, None] < T), other=0.0).to(tl.float32)
+E           b_Ai_22 = tl.load(p_A_22, mask=(o_t[:, None] + 16 < T), other=0.0).to(tl.float32)
+E           b_Ai_33 = tl.load(p_A_33, mask=(o_t[:, None] + 32 < T), other=0.0).to(tl.float32)
+E           b_Ai_44 = tl.load(p_A_44, mask=(o_t[:, None] + 48 < T), other=0.0).to(tl.float32)
+E       else:
+E           desc = make_tensor_descriptor(A, [T, BT], [H*BT, 1], [16, 16])
+E           desc_o = make_tensor_descriptor(Ai, [T, BT], [H*BT, 1], [16, 16])
+E           b_Ai_11 = desc.load([i_t * BT + 0, 0]).to(tl.float32)
+E                     ^
+E   Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support
+_ test_solve_tril_varlen[H4-D100-chunk_size64-cu_seqlens[0, 15, 100, 300, 1200, 2000]] _
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/core.py:43: in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/core.py:1397: in load
+    return _semantic.descriptor_load(self, offsets, "", "")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1097: in descriptor_load
+    offsets = self._convert_to_ir_values(offsets, require_i64=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1851: in _convert_to_ir_values
+    return [self._convert_elem_to_ir_value(elem, require_i64) for elem in list_like]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/language/semantic.py:1844: in _convert_elem_to_ir_value
+    assert False, "Block pointers only support 32 bit `offsets/block_shape`, " \
+           ^^^^^
+E   AssertionError: Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support
+
+The above exception was the direct cause of the following exception:
+tests/ops/test_solve_tril.py:97: in test_solve_tril_varlen
+    tri = solve_tril(A, cu_seqlens=cu_seqlens)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1044: in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+fla/backends.py:202: in wrapper
+    return default_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/utils/decorators.py:152: in wrapper
+    return fn(*processed_args, **processed_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+fla/ops/utils/solve_tril.py:401: in solve_tril
+    merge_fn[NT, B * H](
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:419: in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:452: in run
+    return self.fn.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/autotuner.py:250: in run
+    ret = self.fn.run(
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:733: in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/runtime/jit.py:861: in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:300: in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/triton/compiler/compiler.py:80: in make_ir
+    return ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+E   triton.compiler.errors.CompilationError: at 41:18:
+E           p_A_11 = A + o_t[:, None] * (H*BT) + o_i[None, :]
+E           p_A_22 = A + (o_t[:, None] + 16) * (H*BT) + (o_i[None, :] + 16)
+E           p_A_33 = A + (o_t[:, None] + 32) * (H*BT) + (o_i[None, :] + 32)
+E           p_A_44 = A + (o_t[:, None] + 48) * (H*BT) + (o_i[None, :] + 48)
+E           b_Ai_11 = tl.load(p_A_11, mask=(o_t[:, None] < T), other=0.0).to(tl.float32)
+E           b_Ai_22 = tl.load(p_A_22, mask=(o_t[:, None] + 16 < T), other=0.0).to(tl.float32)
+E           b_Ai_33 = tl.load(p_A_33, mask=(o_t[:, None] + 32 < T), other=0.0).to(tl.float32)
+E           b_Ai_44 = tl.load(p_A_44, mask=(o_t[:, None] + 48 < T), other=0.0).to(tl.float32)
+E       else:
+E           desc = make_tensor_descriptor(A, [T, BT], [H*BT, 1], [16, 16])
+E           desc_o = make_tensor_descriptor(Ai, [T, BT], [H*BT, 1], [16, 16])
+E           b_Ai_11 = desc.load([i_t * BT + 0, 0]).to(tl.float32)
+E                     ^
+E   Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support
+=============================== warnings summary ===============================
+../../../.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/_pytest/config/__init__.py:1345
+  /home/zhang_e/.venvs/kda-residual-wy-20261023/lib/python3.12/site-packages/_pytest/config/__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/solver-fix-tma.xml -
+========================= 2 failed, 1 warning in 1.58s =========================

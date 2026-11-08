@@ -1,0 +1,46 @@
+{
+  "exitcode": 0,
+  "calls": [
+    {
+      "V": 128,
+      "K": 128,
+      "vg_dtype": "torch.float32",
+      "before": [
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None"
+      ],
+      "diagnostic_candidates": [
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 64, num_warps: 2, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 4, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 3, maxnreg: None",
+        "BK: 64, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 2, maxnreg: None",
+        "BK: 32, num_warps: 2, num_ctas: 1, num_stages: 1, maxnreg: None",
+        "BK: 16, num_warps: 2, num_ctas: 1, num_stages: 1, maxnreg: None",
+        "BK: 32, num_warps: 4, num_ctas: 1, num_stages: 1, maxnreg: None",
+        "BK: 16, num_warps: 4, num_ctas: 1, num_stages: 1, maxnreg: None"
+      ]
+    }
+  ],
+  "selected_configs": [
+    "BK: 16, num_warps: 4, num_ctas: 1, num_stages: 1, maxnreg: None"
+  ],
+  "scope": "diagnostic in-memory candidate pruning only; source, inputs, reference and tolerances unchanged; disk tuning cache disabled only in this probe"
+}

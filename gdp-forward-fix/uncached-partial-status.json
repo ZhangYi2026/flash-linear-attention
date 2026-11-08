@@ -1,0 +1,6 @@
+{
+  "passed": 36,
+  "failed": 0,
+  "status": "interrupted during Triton compilation after 1723.55 seconds; not a completed validation",
+  "reason": "Full same-target rerun uses repository-default persistent autotune cache. No test inputs, assertions, references, parameters or skips changed."
+}

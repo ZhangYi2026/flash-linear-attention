@@ -1,0 +1,3 @@
+[
+  "tests/ops/test_gated_oja_rule2.py::test_chunk[B2-T1000-H3-K128-M128-scale0.1-torch.bfloat16-qnTrue-knTrue-h0True-htTrue]"
+]

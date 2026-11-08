@@ -1,0 +1,376 @@
+{
+  "rows": [
+    {
+      "phase": "intracard0",
+      "stage": "kda_gate_chunk_cumsum",
+      "outputs": {
+        "shape": [
+          1,
+          32768,
+          1,
+          32
+        ],
+        "dtype": "torch.float32",
+        "nan": 0,
+        "inf": 0,
+        "max_finite": 268.87457275390625,
+        "first_nonfinite_flat": null
+      }
+    },
+    {
+      "phase": "intracard0",
+      "stage": "chunk_kda_fwd_intra",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 1392640.0,
+          "first_nonfinite_flat": null
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 2473984.0,
+          "first_nonfinite_flat": null
+        },
+        null,
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 4.6875,
+          "first_nonfinite_flat": null
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 512,
+          "inf": 0,
+          "max_finite": 2.52553319199134e+38,
+          "first_nonfinite_flat": 2996
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 1310720.0,
+          "first_nonfinite_flat": null
+        }
+      ]
+    },
+    {
+      "phase": "intracard0",
+      "stage": "chunk_gated_delta_rule_fwd_h",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            512,
+            1,
+            32,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 430788,
+          "inf": 124,
+          "max_finite": 1.5684890350262007e+38,
+          "first_nonfinite_flat": 93184
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 861824,
+          "inf": 499,
+          "max_finite": 3.3895313892515355e+38,
+          "first_nonfinite_flat": 185861
+        },
+        null
+      ]
+    },
+    {
+      "phase": "intracard0",
+      "stage": "chunk_gla_fwd_o_gk",
+      "outputs": {
+        "shape": [
+          1,
+          32768,
+          1,
+          32
+        ],
+        "dtype": "torch.bfloat16",
+        "nan": 863845,
+        "inf": 27,
+        "max_finite": 3.3762391092936863e+38,
+        "first_nonfinite_flat": 184320
+      }
+    },
+    {
+      "phase": "intracard1",
+      "stage": "kda_gate_chunk_cumsum",
+      "outputs": {
+        "shape": [
+          1,
+          32768,
+          1,
+          32
+        ],
+        "dtype": "torch.float32",
+        "nan": 0,
+        "inf": 0,
+        "max_finite": 268.87457275390625,
+        "first_nonfinite_flat": null
+      }
+    },
+    {
+      "phase": "intracard1",
+      "stage": "chunk_kda_fwd_intra",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 1392640.0,
+          "first_nonfinite_flat": null
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 2473984.0,
+          "first_nonfinite_flat": null
+        },
+        null,
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 4.6875,
+          "first_nonfinite_flat": null
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 512,
+          "inf": 0,
+          "max_finite": 2.52553319199134e+38,
+          "first_nonfinite_flat": 2996
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            64
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 0,
+          "inf": 0,
+          "max_finite": 1310720.0,
+          "first_nonfinite_flat": null
+        }
+      ]
+    },
+    {
+      "phase": "intracard1",
+      "stage": "chunk_gated_delta_rule_fwd_h",
+      "outputs": [
+        {
+          "shape": [
+            1,
+            512,
+            1,
+            32,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 430788,
+          "inf": 124,
+          "max_finite": 1.5684890350262007e+38,
+          "first_nonfinite_flat": 93184
+        },
+        {
+          "shape": [
+            1,
+            32768,
+            1,
+            32
+          ],
+          "dtype": "torch.bfloat16",
+          "nan": 861824,
+          "inf": 499,
+          "max_finite": 3.3895313892515355e+38,
+          "first_nonfinite_flat": 185861
+        },
+        null
+      ]
+    },
+    {
+      "phase": "intracard1",
+      "stage": "chunk_gla_fwd_o_gk",
+      "outputs": {
+        "shape": [
+          1,
+          32768,
+          1,
+          32
+        ],
+        "dtype": "torch.bfloat16",
+        "nan": 863845,
+        "inf": 27,
+        "max_finite": 3.3762391092936863e+38,
+        "first_nonfinite_flat": 184320
+      }
+    }
+  ],
+  "intracard0": {
+    "shape": [
+      1,
+      32768,
+      1,
+      32
+    ],
+    "dtype": "torch.bfloat16",
+    "nan": 863845,
+    "inf": 27,
+    "max_finite": 3.3762391092936863e+38,
+    "first_nonfinite_flat": 184320
+  },
+  "intracard1": {
+    "shape": [
+      1,
+      32768,
+      1,
+      32
+    ],
+    "dtype": "torch.bfloat16",
+    "nan": 863845,
+    "inf": 27,
+    "max_finite": 3.3762391092936863e+38,
+    "first_nonfinite_flat": 184320
+  },
+  "activated_gate_range": [
+    -2.9120265370614256,
+    -0.10134678234243813
+  ],
+  "cpu_fp64_full_sequence": [
+    {
+      "token": 0,
+      "state_max": 4.685211181640625,
+      "output_max": 1.4935022123508934
+    },
+    {
+      "token": 63,
+      "state_max": 113.16589070814169,
+      "output_max": 15.141161444536833
+    },
+    {
+      "token": 127,
+      "state_max": 21.711617588043403,
+      "output_max": 4.188037077844147
+    },
+    {
+      "token": 255,
+      "state_max": 36.69747387299992,
+      "output_max": 6.289178757390956
+    },
+    {
+      "token": 511,
+      "state_max": 38.987456859590374,
+      "output_max": 19.274970428357356
+    },
+    {
+      "token": 1023,
+      "state_max": 122.2506582996944,
+      "output_max": 21.03634385473735
+    },
+    {
+      "token": 2047,
+      "state_max": 505627.4929759288,
+      "output_max": 44516.29516188479
+    },
+    {
+      "token": 4095,
+      "state_max": 16942280632054.807,
+      "output_max": 5718108918513.049
+    },
+    {
+      "token": 5759,
+      "state_max": 1.8296753730249565e+31,
+      "output_max": 3.3140292902164216e+30
+    },
+    {
+      "token": 8191,
+      "state_max": 4.340211612657395e+70,
+      "output_max": 1.4159836621771202e+70
+    },
+    {
+      "token": 16383,
+      "state_max": 3.9402787347171444e+117,
+      "output_max": 1.5665808081652715e+117
+    },
+    {
+      "token": 32767,
+      "state_max": 4.916237383237887e+204,
+      "output_max": 3.0293239704956815e+204
+    }
+  ]
+}

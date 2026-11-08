@@ -1,0 +1,14 @@
+[
+  {
+    "name": "latest-baseline-gdp",
+    "exitcode": 1
+  },
+  {
+    "name": "latest-baseline-kda",
+    "exitcode": 1
+  },
+  {
+    "name": "latest-fixed-kda",
+    "exitcode": 0
+  }
+]

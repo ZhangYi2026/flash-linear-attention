@@ -1,0 +1,319 @@
+[
+  {
+    "name": "submission-tma-default",
+    "repo": "submission-tma-20261113",
+    "flags": {},
+    "exitcode": 0,
+    "args": [
+      "-m",
+      "pytest",
+      "-p",
+      "audit_collection",
+      "tests/ops/test_solve_tril.py",
+      "-k",
+      "not large_batch_offsets",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/submission-tma-default.xml"
+    ]
+  },
+  {
+    "name": "submission-tma-enabled",
+    "repo": "submission-tma-20261113",
+    "flags": {
+      "FLA_USE_TMA": "1"
+    },
+    "exitcode": 0,
+    "args": [
+      "-m",
+      "pytest",
+      "-p",
+      "audit_collection",
+      "tests/ops/test_solve_tril.py",
+      "-k",
+      "not large_batch_offsets",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/submission-tma-enabled.xml"
+    ]
+  },
+  {
+    "name": "submission-combined-tma",
+    "repo": "submission-integration-20261113",
+    "flags": {
+      "FLA_USE_TMA": "1"
+    },
+    "exitcode": 0,
+    "args": [
+      "-m",
+      "pytest",
+      "-p",
+      "audit_collection",
+      "tests/ops/test_solve_tril.py",
+      "-k",
+      "not large_batch_offsets",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/submission-combined-tma.xml"
+    ]
+  },
+  {
+    "name": "submission-large-offset-tma0",
+    "repo": "submission-integration-20261113",
+    "flags": {
+      "FLA_USE_TMA": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/check_solver_large_offset.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-integration-20261113",
+      "--tag",
+      "submission-large-offset-tma0"
+    ]
+  },
+  {
+    "name": "submission-large-offset-tma1",
+    "repo": "submission-integration-20261113",
+    "flags": {
+      "FLA_USE_TMA": "1"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/check_solver_large_offset.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-integration-20261113",
+      "--tag",
+      "submission-large-offset-tma1"
+    ]
+  },
+  {
+    "name": "submission-integration",
+    "repo": "submission-integration-20261113",
+    "flags": {
+      "FLA_REWY": "1"
+    },
+    "exitcode": 0,
+    "args": [
+      "-m",
+      "pytest",
+      "-p",
+      "audit_collection",
+      "tests/ops/test_gdn.py",
+      "tests/ops/test_gdn_kernels.py",
+      "tests/ops/test_gdp.py",
+      "tests/cp/test_gdn.py",
+      "tests/cp/test_gdp.py",
+      "tests/cp/test_intracard.py",
+      "tests/layers/test_gated_deltanet.py",
+      "tests/layers/test_mom_shared_no_grad.py",
+      "tests/models/test_modeling_gated_deltanet.py",
+      "tests/models/test_modeling_gated_deltaproduct.py",
+      "tests/models/test_modeling_mom.py",
+      "-q",
+      "--tb=short",
+      "-rs",
+      "--junitxml=/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/submission-integration.xml"
+    ]
+  },
+  {
+    "name": "benchmark-A1",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "A1"
+    ]
+  },
+  {
+    "name": "benchmark-B1",
+    "repo": "latest-solver-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-solver-20261113",
+      "--tag",
+      "B1"
+    ]
+  },
+  {
+    "name": "benchmark-B2",
+    "repo": "latest-solver-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-solver-20261113",
+      "--tag",
+      "B2"
+    ]
+  },
+  {
+    "name": "benchmark-A2",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "A2"
+    ]
+  },
+  {
+    "name": "oja-benchmark-stream-A1",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "stream-A1"
+    ]
+  },
+  {
+    "name": "oja-benchmark-stream-B1",
+    "repo": "latest-oja-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-oja-20261113",
+      "--tag",
+      "stream-B1"
+    ]
+  },
+  {
+    "name": "oja-benchmark-stream-B2",
+    "repo": "latest-oja-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-oja-20261113",
+      "--tag",
+      "stream-B2"
+    ]
+  },
+  {
+    "name": "oja-benchmark-stream-A2",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_oja.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "stream-A2"
+    ]
+  },
+  {
+    "name": "benchmark-TMA-A1",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "TMA-A1"
+    ]
+  },
+  {
+    "name": "benchmark-TMA-B1",
+    "repo": "submission-tma-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-tma-20261113",
+      "--tag",
+      "TMA-B1"
+    ]
+  },
+  {
+    "name": "benchmark-TMA-B2",
+    "repo": "submission-tma-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-tma-20261113",
+      "--tag",
+      "TMA-B2"
+    ]
+  },
+  {
+    "name": "benchmark-TMA-A2",
+    "repo": "latest-baseline-20261113",
+    "flags": {
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/latest-baseline-20261113",
+      "--tag",
+      "TMA-A2"
+    ]
+  },
+  {
+    "name": "benchmark-TMA-enabled",
+    "repo": "submission-tma-20261113",
+    "flags": {
+      "FLA_USE_TMA": "1",
+      "FLA_CACHE_RESULTS": "0"
+    },
+    "exitcode": 0,
+    "args": [
+      "/mnt/d/mycode/hw/gdn2/output/fla_gdp_forward_fix_20261108/benchmark_solver.py",
+      "--repo",
+      "/home/zhang_e/.cache/fla-rewy-pr-20261108/submission-tma-20261113",
+      "--tag",
+      "TMA-enabled",
+      "--tma"
+    ]
+  }
+]
